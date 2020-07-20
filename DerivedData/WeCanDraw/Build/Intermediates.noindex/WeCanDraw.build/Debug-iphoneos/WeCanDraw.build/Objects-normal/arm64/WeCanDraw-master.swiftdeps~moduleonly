@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "fbc4249ab84f13471cac74b45e3548d3"
+build_time: [1595243876, 753653000]
+inputs:
+  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/ViewController.swift": [1595243870, 112981986]
+  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/AppDelegate.swift": [1595243870, 102835539]
+  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/SceneDelegate.swift": [1595243870, 110722099]

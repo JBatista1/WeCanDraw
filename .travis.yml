@@ -1,0 +1,12 @@
+language: objective-c
+os: osx
+osx_image: xcode11.2
+xcode_workspace: WeCanDraw.xcodeproj
+xcode_scheme: WeCanDraw
+xcode_destination: platform=iOS Simulator,OS=13.2.2,name=iPhone 8
+notifications:
+email:
+  recipients:
+    - j.batista.damasceno@icloud.com
+  on_success: change # default: change
+  on_failure: always # default: always

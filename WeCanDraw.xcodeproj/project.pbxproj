@@ -3,17 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A2A313E24E736BF00DCD545 /* Draw.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2A313D24E736BF00DCD545 /* Draw.xib */; };
+		9A2A314024E736D400DCD545 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A313F24E736D400DCD545 /* Draw.swift */; };
+		9A2A314224E7382800DCD545 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A314124E7382800DCD545 /* NibView.swift */; };
+		9A2A314424E7385200DCD545 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A314324E7385200DCD545 /* UIViewExtension.swift */; };
 		9A6CE81424C5B4DE0084C860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CE81324C5B4DE0084C860 /* AppDelegate.swift */; };
 		9A6CE81624C5B4DE0084C860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CE81524C5B4DE0084C860 /* SceneDelegate.swift */; };
-		9A6CE81824C5B4DE0084C860 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CE81724C5B4DE0084C860 /* ViewController.swift */; };
-		9A6CE81B24C5B4DE0084C860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6CE81924C5B4DE0084C860 /* Main.storyboard */; };
 		9A6CE81D24C5B4E10084C860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6CE81C24C5B4E10084C860 /* Assets.xcassets */; };
 		9A6CE82024C5B4E10084C860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6CE81E24C5B4E10084C860 /* LaunchScreen.storyboard */; };
 		9A6CE82B24C5B4E10084C860 /* WeCanDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CE82A24C5B4E10084C860 /* WeCanDrawTests.swift */; };
+		9A753BD624E745F800C1C334 /* FaceTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A753BD524E745F800C1C334 /* FaceTrack.framework */; };
+		9A753BD724E745F800C1C334 /* FaceTrack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A753BD524E745F800C1C334 /* FaceTrack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A8359E424E7514200C22AFA /* AvcaptureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8359E324E7514200C22AFA /* AvcaptureProtocol.swift */; };
+		9AA9B24A24D8BF0900E2606F /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9B24924D8BF0900E2606F /* DrawViewController.swift */; };
+		9AA9B24C24D8BF2400E2606F /* DrawPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9B24B24D8BF2400E2606F /* DrawPresenter.swift */; };
+		C7DAC0C6727C8A5EB046CAD0 /* Pods_WeCanDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5454EF6FFB299F7DB5AAE1 /* Pods_WeCanDraw.framework */; };
+		E2E1EF1FB80E246E61095A1A /* Pods_WeCanDrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48ADEA2F128DBB273BE92A5 /* Pods_WeCanDrawTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,18 +35,45 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9A753BD824E745F800C1C334 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9A753BD724E745F800C1C334 /* FaceTrack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		28659391D38582DE18319031 /* Pods-WeCanDraw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCanDraw.debug.xcconfig"; path = "Target Support Files/Pods-WeCanDraw/Pods-WeCanDraw.debug.xcconfig"; sourceTree = "<group>"; };
+		9A2A313D24E736BF00DCD545 /* Draw.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Draw.xib; sourceTree = "<group>"; };
+		9A2A313F24E736D400DCD545 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		9A2A314124E7382800DCD545 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		9A2A314324E7385200DCD545 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		9A2A315124E73CD400DCD545 /* FaceTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FaceTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6CE81024C5B4DE0084C860 /* WeCanDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeCanDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6CE81324C5B4DE0084C860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A6CE81524C5B4DE0084C860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A6CE81724C5B4DE0084C860 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A6CE81A24C5B4DE0084C860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A6CE81C24C5B4E10084C860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6CE81F24C5B4E10084C860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6CE82124C5B4E10084C860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A6CE82624C5B4E10084C860 /* WeCanDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeCanDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6CE82A24C5B4E10084C860 /* WeCanDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeCanDrawTests.swift; sourceTree = "<group>"; };
 		9A6CE82C24C5B4E10084C860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A753BD524E745F800C1C334 /* FaceTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FaceTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A8359E324E7514200C22AFA /* AvcaptureProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvcaptureProtocol.swift; sourceTree = "<group>"; };
+		9AA9B24924D8BF0900E2606F /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		9AA9B24B24D8BF2400E2606F /* DrawPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPresenter.swift; sourceTree = "<group>"; };
+		C48ADEA2F128DBB273BE92A5 /* Pods_WeCanDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeCanDrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5454EF6FFB299F7DB5AAE1 /* Pods_WeCanDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeCanDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E088DFE67EA7ABEA693AC5F8 /* Pods-WeCanDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCanDraw.release.xcconfig"; path = "Target Support Files/Pods-WeCanDraw/Pods-WeCanDraw.release.xcconfig"; sourceTree = "<group>"; };
+		F44D24B417862208DBDD20B0 /* Pods-WeCanDrawTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCanDrawTests.release.xcconfig"; path = "Target Support Files/Pods-WeCanDrawTests/Pods-WeCanDrawTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB893CAFE2E89ABDB4F0FCEB /* Pods-WeCanDrawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCanDrawTests.debug.xcconfig"; path = "Target Support Files/Pods-WeCanDrawTests/Pods-WeCanDrawTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7DAC0C6727C8A5EB046CAD0 /* Pods_WeCanDraw.framework in Frameworks */,
+				9A753BD624E745F800C1C334 /* FaceTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +90,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E1EF1FB80E246E61095A1A /* Pods_WeCanDrawTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FCF1B05728AA912F1C4864C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A753BD524E745F800C1C334 /* FaceTrack.framework */,
+				9A2A315124E73CD400DCD545 /* FaceTrack.framework */,
+				DB5454EF6FFB299F7DB5AAE1 /* Pods_WeCanDraw.framework */,
+				C48ADEA2F128DBB273BE92A5 /* Pods_WeCanDrawTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8797F7B1BB5F4F0EBC8046B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28659391D38582DE18319031 /* Pods-WeCanDraw.debug.xcconfig */,
+				E088DFE67EA7ABEA693AC5F8 /* Pods-WeCanDraw.release.xcconfig */,
+				FB893CAFE2E89ABDB4F0FCEB /* Pods-WeCanDrawTests.debug.xcconfig */,
+				F44D24B417862208DBDD20B0 /* Pods-WeCanDrawTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9A6CE80724C5B4DE0084C860 = {
 			isa = PBXGroup;
 			children = (
 				9A6CE81224C5B4DE0084C860 /* WeCanDraw */,
 				9A6CE82924C5B4E10084C860 /* WeCanDrawTests */,
 				9A6CE81124C5B4DE0084C860 /* Products */,
+				8797F7B1BB5F4F0EBC8046B4 /* Pods */,
+				3FCF1B05728AA912F1C4864C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +142,12 @@
 		9A6CE81224C5B4DE0084C860 /* WeCanDraw */ = {
 			isa = PBXGroup;
 			children = (
-				9A6CE81324C5B4DE0084C860 /* AppDelegate.swift */,
-				9A6CE81524C5B4DE0084C860 /* SceneDelegate.swift */,
-				9A6CE81724C5B4DE0084C860 /* ViewController.swift */,
-				9A6CE81924C5B4DE0084C860 /* Main.storyboard */,
-				9A6CE81C24C5B4E10084C860 /* Assets.xcassets */,
-				9A6CE81E24C5B4E10084C860 /* LaunchScreen.storyboard */,
-				9A6CE82124C5B4E10084C860 /* Info.plist */,
+				9AA9B22224D8BE9D00E2606F /* AppUI */,
+				9AA9B21F24D8BE0B00E2606F /* Helpers */,
+				9AA9B21D24D8BDE700E2606F /* Coordinator */,
+				9AA9B21C24D8BDE200E2606F /* Extension */,
+				9AA9B21B24D8BDD700E2606F /* Support Files */,
+				9AA9B21A24D8BDCA00E2606F /* Scenes */,
 			);
 			path = WeCanDraw;
 			sourceTree = "<group>";
@@ -99,6 +161,76 @@
 			path = WeCanDrawTests;
 			sourceTree = "<group>";
 		};
+		9AA9B21A24D8BDCA00E2606F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9AA9B22024D8BE7800E2606F /* Drawn */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9AA9B21B24D8BDD700E2606F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A6CE81C24C5B4E10084C860 /* Assets.xcassets */,
+				9A6CE81E24C5B4E10084C860 /* LaunchScreen.storyboard */,
+				9A6CE82124C5B4E10084C860 /* Info.plist */,
+				9A6CE81324C5B4DE0084C860 /* AppDelegate.swift */,
+				9A6CE81524C5B4DE0084C860 /* SceneDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		9AA9B21C24D8BDE200E2606F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A314324E7385200DCD545 /* UIViewExtension.swift */,
+				9A8359E324E7514200C22AFA /* AvcaptureProtocol.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9AA9B21D24D8BDE700E2606F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9AA9B21F24D8BE0B00E2606F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9AA9B22024D8BE7800E2606F /* Drawn */ = {
+			isa = PBXGroup;
+			children = (
+				9AA9B22124D8BE7E00E2606F /* View */,
+				9AA9B24924D8BF0900E2606F /* DrawViewController.swift */,
+				9AA9B24B24D8BF2400E2606F /* DrawPresenter.swift */,
+			);
+			path = Drawn;
+			sourceTree = "<group>";
+		};
+		9AA9B22124D8BE7E00E2606F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A313D24E736BF00DCD545 /* Draw.xib */,
+				9A2A313F24E736D400DCD545 /* Draw.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9AA9B22224D8BE9D00E2606F /* AppUI */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A314124E7382800DCD545 /* NibView.swift */,
+			);
+			path = AppUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +238,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A6CE82F24C5B4E10084C860 /* Build configuration list for PBXNativeTarget "WeCanDraw" */;
 			buildPhases = (
+				442995787164791F5481F70C /* [CP] Check Pods Manifest.lock */,
 				9A6CE80C24C5B4DE0084C860 /* Sources */,
 				9A6CE80D24C5B4DE0084C860 /* Frameworks */,
 				9A6CE80E24C5B4DE0084C860 /* Resources */,
 				9A6CE83524C5B61A0084C860 /* SwiftLint */,
+				2C016ADA5569B48D67719A5B /* [CP] Embed Pods Frameworks */,
+				9A753BD824E745F800C1C334 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A6CE83224C5B4E10084C860 /* Build configuration list for PBXNativeTarget "WeCanDrawTests" */;
 			buildPhases = (
+				6A64B27FE78F8762B3252E45 /* [CP] Check Pods Manifest.lock */,
 				9A6CE82224C5B4E10084C860 /* Sources */,
 				9A6CE82324C5B4E10084C860 /* Frameworks */,
 				9A6CE82424C5B4E10084C860 /* Resources */,
@@ -182,8 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6CE82024C5B4E10084C860 /* LaunchScreen.storyboard in Resources */,
+				9A2A313E24E736BF00DCD545 /* Draw.xib in Resources */,
 				9A6CE81D24C5B4E10084C860 /* Assets.xcassets in Resources */,
-				9A6CE81B24C5B4DE0084C860 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +333,67 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C016ADA5569B48D67719A5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeCanDraw/Pods-WeCanDraw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeCanDraw/Pods-WeCanDraw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeCanDraw/Pods-WeCanDraw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		442995787164791F5481F70C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeCanDraw-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A64B27FE78F8762B3252E45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeCanDrawTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9A6CE83524C5B61A0084C860 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,7 +410,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -222,9 +419,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A6CE81824C5B4DE0084C860 /* ViewController.swift in Sources */,
 				9A6CE81424C5B4DE0084C860 /* AppDelegate.swift in Sources */,
+				9AA9B24C24D8BF2400E2606F /* DrawPresenter.swift in Sources */,
+				9A2A314224E7382800DCD545 /* NibView.swift in Sources */,
+				9AA9B24A24D8BF0900E2606F /* DrawViewController.swift in Sources */,
+				9A2A314424E7385200DCD545 /* UIViewExtension.swift in Sources */,
 				9A6CE81624C5B4DE0084C860 /* SceneDelegate.swift in Sources */,
+				9A2A314024E736D400DCD545 /* Draw.swift in Sources */,
+				9A8359E424E7514200C22AFA /* AvcaptureProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,14 +449,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9A6CE81924C5B4DE0084C860 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A6CE81A24C5B4DE0084C860 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9A6CE81E24C5B4E10084C860 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -382,11 +576,13 @@
 		};
 		9A6CE83024C5B4E10084C860 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28659391D38582DE18319031 /* Pods-WeCanDraw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XYJN7S9JQ;
-				INFOPLIST_FILE = WeCanDraw/Info.plist;
+				INFOPLIST_FILE = "WeCanDraw/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,17 +590,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.WeCanDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9A6CE83124C5B4E10084C860 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E088DFE67EA7ABEA693AC5F8 /* Pods-WeCanDraw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XYJN7S9JQ;
-				INFOPLIST_FILE = WeCanDraw/Info.plist;
+				INFOPLIST_FILE = "WeCanDraw/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,12 +610,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.WeCanDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		9A6CE83324C5B4E10084C860 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB893CAFE2E89ABDB4F0FCEB /* Pods-WeCanDrawTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -440,6 +639,7 @@
 		};
 		9A6CE83424C5B4E10084C860 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44D24B417862208DBDD20B0 /* Pods-WeCanDrawTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Draw" customModule="WeCanDraw" customModuleProvider="target">
+            <connections>
+                <outlet property="clickedBlue" destination="abT-9j-YUL" id="lJd-g9-ANm"/>
+                <outlet property="clickedPurple" destination="mRB-x3-s9j" id="1Cl-yl-3NS"/>
+                <outlet property="feedBack" destination="KgO-V5-mJr" id="pUv-Y5-qmN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8RY-sB-OC7">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fui chamado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgO-V5-mJr">
+                    <rect key="frame" x="16" y="134" width="382" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abT-9j-YUL">
+                    <rect key="frame" x="147" y="262" width="120" height="100"/>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="OGZ-kO-fFE"/>
+                        <constraint firstAttribute="width" constant="120" id="eXx-0T-jvA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="Cian Color">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRB-x3-s9j">
+                    <rect key="frame" x="147" y="392" width="120" height="100"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="5U0-cw-vAK"/>
+                        <constraint firstAttribute="width" constant="120" id="QKY-YB-a6C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="Purple Color">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6Nn-Xz-6La" firstAttribute="trailing" secondItem="KgO-V5-mJr" secondAttribute="trailing" constant="16" id="1Xz-EV-w91"/>
+                <constraint firstItem="KgO-V5-mJr" firstAttribute="leading" secondItem="6Nn-Xz-6La" secondAttribute="leading" constant="16" id="2p7-uQ-pRU"/>
+                <constraint firstItem="mRB-x3-s9j" firstAttribute="top" secondItem="abT-9j-YUL" secondAttribute="bottom" constant="30" id="HfB-OB-Z9V"/>
+                <constraint firstItem="KgO-V5-mJr" firstAttribute="top" secondItem="6Nn-Xz-6La" secondAttribute="top" constant="90" id="L9b-73-xqf"/>
+                <constraint firstItem="abT-9j-YUL" firstAttribute="centerX" secondItem="6Nn-Xz-6La" secondAttribute="centerX" id="QSE-0y-AdQ"/>
+                <constraint firstItem="mRB-x3-s9j" firstAttribute="centerX" secondItem="abT-9j-YUL" secondAttribute="centerX" id="Yzp-hz-tMx"/>
+                <constraint firstItem="abT-9j-YUL" firstAttribute="top" secondItem="KgO-V5-mJr" secondAttribute="bottom" constant="80" id="dxZ-T2-kbb"/>
+                <constraint firstItem="abT-9j-YUL" firstAttribute="top" secondItem="KgO-V5-mJr" secondAttribute="bottom" constant="80" id="vUU-qH-9gY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6Nn-Xz-6La"/>
+            <point key="canvasLocation" x="67" y="69"/>
+        </view>
+    </objects>
+</document>

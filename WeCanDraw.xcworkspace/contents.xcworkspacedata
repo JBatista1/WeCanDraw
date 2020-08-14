@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Data/Data.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Commons/Commons.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Storage/Storage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Domain/Domain.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:VoiceCommand/VoiceCommand.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FaceTrack/FaceTrack.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WeCanDraw.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -186,6 +186,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVFoundation;
+@import CoreGraphics;
+@import CoreMedia;
+@import FaceTrack;
 @import UIKit;
 #endif
 
@@ -204,6 +208,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class AVCaptureOutput;
+@class AVCaptureConnection;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9WeCanDraw26AcessibilityViewController")
+@interface AcessibilityViewController : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate>
+- (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIApplication;
 @class UISceneSession;
 @class UISceneConnectionOptions;
@@ -216,6 +232,36 @@ SWIFT_CLASS("_TtC9WeCanDraw11AppDelegate")
 - (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+SWIFT_CLASS("_TtC9WeCanDraw7NibView")
+@interface NibView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+@class UIButton;
+
+SWIFT_CLASS("_TtC9WeCanDraw4Draw")
+@interface Draw : NibView
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified feedBack;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified clickedBlue;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified clickedPurple;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9WeCanDraw18DrawViewController")
+@interface DrawViewController : FaceCapture
+- (void)viewDidLoad;
+- (void)loadView;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 @class UIWindow;
 @class UIScene;
@@ -232,15 +278,7 @@ SWIFT_CLASS("_TtC9WeCanDraw13SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
-@class NSCoder;
 
-SWIFT_CLASS("_TtC9WeCanDraw14ViewController")
-@interface ViewController : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

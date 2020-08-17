@@ -1,12 +1,12 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "71cd8e5632eef04ea6de4a38bd87a930"
-build_time: [1597448961, 102275000]
+options: "7e2c5e160df6bb000ef68af74e98f498"
+build_time: [1597707644, 745765000]
 inputs:
-  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/Support Files/AppDelegate.swift": [1595279854, 692076440]
-  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/DrawPresenter.swift": [1596491742, 691552716]
-  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/AppUI/NibView.swift": [1596547274, 728583754]
-  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/DrawViewController.swift": [1597448960, 551347602]
-  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/Extension/UIViewExtension.swift": [1596547274, 731707343]
-  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/Support Files/SceneDelegate.swift": [1596492246, 721542367]
-  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/View/Draw.swift": [1597440766, 489821288]
-  "/Users/ItSelf/Documents/TCC/WeCanDraw/WeCanDraw/Extension/AvcaptureProtocol.swift": [1597448114, 620828124]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Support Files/AppDelegate.swift": [1597707590, 547124499]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/DrawPresenter.swift": [1597707590, 546452477]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/AppUI/NibView.swift": [1597707590, 545880500]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/DrawViewController.swift": [1597707590, 546573482]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Extension/UIViewExtension.swift": [1597707590, 546218573]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Support Files/SceneDelegate.swift": [1597707590, 549341783]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/View/Draw.swift": [1597707590, 546741971]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Extension/AvcaptureProtocol.swift": [1597707590, 546093016]

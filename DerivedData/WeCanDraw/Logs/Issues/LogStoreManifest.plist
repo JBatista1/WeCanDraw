@@ -62,6 +62,34 @@
 			<key>uniqueIdentifier</key>
 			<string>47D865DC-76BF-4229-BB11-C308E4924ECB</string>
 		</dict>
+		<key>5C923D68-9E90-4DFA-9754-B15CFA5346A8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>5C923D68-9E90-4DFA-9754-B15CFA5346A8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>WeCanDraw-byxbsqppnbvueqgjumnjqecmclqg</string>
+			<key>timeStartedRecording</key>
+			<real>619400456.13175905</real>
+			<key>timeStoppedRecording</key>
+			<real>619400472.10852206</real>
+			<key>title</key>
+			<string>Build target WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>5C923D68-9E90-4DFA-9754-B15CFA5346A8</string>
+		</dict>
 		<key>7DACBE12-547C-430D-B7F0-CB02E2EBFED5</key>
 		<dict>
 			<key>className</key>

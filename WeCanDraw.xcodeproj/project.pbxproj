@@ -16,11 +16,10 @@
 		9A6CE81D24C5B4E10084C860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6CE81C24C5B4E10084C860 /* Assets.xcassets */; };
 		9A6CE82024C5B4E10084C860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6CE81E24C5B4E10084C860 /* LaunchScreen.storyboard */; };
 		9A6CE82B24C5B4E10084C860 /* WeCanDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CE82A24C5B4E10084C860 /* WeCanDrawTests.swift */; };
-		9A753BD624E745F800C1C334 /* FaceTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A753BD524E745F800C1C334 /* FaceTrack.framework */; };
-		9A753BD724E745F800C1C334 /* FaceTrack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A753BD524E745F800C1C334 /* FaceTrack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9A8359E424E7514200C22AFA /* AvcaptureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8359E324E7514200C22AFA /* AvcaptureProtocol.swift */; };
 		9AA9B24A24D8BF0900E2606F /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9B24924D8BF0900E2606F /* DrawViewController.swift */; };
 		9AA9B24C24D8BF2400E2606F /* DrawPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9B24B24D8BF2400E2606F /* DrawPresenter.swift */; };
+		9AB463D824EB4F9600B49F31 /* AccessibilityFaceMouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A22CE5424EB4E3C001EB734 /* AccessibilityFaceMouse.framework */; };
+		9AB463D924EB4F9600B49F31 /* AccessibilityFaceMouse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A22CE5424EB4E3C001EB734 /* AccessibilityFaceMouse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7DAC0C6727C8A5EB046CAD0 /* Pods_WeCanDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5454EF6FFB299F7DB5AAE1 /* Pods_WeCanDraw.framework */; };
 		E2E1EF1FB80E246E61095A1A /* Pods_WeCanDrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48ADEA2F128DBB273BE92A5 /* Pods_WeCanDrawTests.framework */; };
 /* End PBXBuildFile section */
@@ -36,13 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9A753BD824E745F800C1C334 /* Embed Frameworks */ = {
+		9AB463DA24EB4F9600B49F31 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9A753BD724E745F800C1C334 /* FaceTrack.framework in Embed Frameworks */,
+				9AB463D924EB4F9600B49F31 /* AccessibilityFaceMouse.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		28659391D38582DE18319031 /* Pods-WeCanDraw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeCanDraw.debug.xcconfig"; path = "Target Support Files/Pods-WeCanDraw/Pods-WeCanDraw.debug.xcconfig"; sourceTree = "<group>"; };
+		9A22CE5424EB4E3C001EB734 /* AccessibilityFaceMouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AccessibilityFaceMouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2A313D24E736BF00DCD545 /* Draw.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Draw.xib; sourceTree = "<group>"; };
 		9A2A313F24E736D400DCD545 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
 		9A2A314124E7382800DCD545 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
@@ -66,7 +66,6 @@
 		9A6CE82A24C5B4E10084C860 /* WeCanDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeCanDrawTests.swift; sourceTree = "<group>"; };
 		9A6CE82C24C5B4E10084C860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A753BD524E745F800C1C334 /* FaceTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FaceTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A8359E324E7514200C22AFA /* AvcaptureProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvcaptureProtocol.swift; sourceTree = "<group>"; };
 		9AA9B24924D8BF0900E2606F /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		9AA9B24B24D8BF2400E2606F /* DrawPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPresenter.swift; sourceTree = "<group>"; };
 		C48ADEA2F128DBB273BE92A5 /* Pods_WeCanDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeCanDrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,8 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB463D824EB4F9600B49F31 /* AccessibilityFaceMouse.framework in Frameworks */,
 				C7DAC0C6727C8A5EB046CAD0 /* Pods_WeCanDraw.framework in Frameworks */,
-				9A753BD624E745F800C1C334 /* FaceTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +99,7 @@
 		3FCF1B05728AA912F1C4864C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A22CE5424EB4E3C001EB734 /* AccessibilityFaceMouse.framework */,
 				9A753BD524E745F800C1C334 /* FaceTrack.framework */,
 				9A2A315124E73CD400DCD545 /* FaceTrack.framework */,
 				DB5454EF6FFB299F7DB5AAE1 /* Pods_WeCanDraw.framework */,
@@ -185,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				9A2A314324E7385200DCD545 /* UIViewExtension.swift */,
-				9A8359E324E7514200C22AFA /* AvcaptureProtocol.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -244,7 +243,7 @@
 				9A6CE80E24C5B4DE0084C860 /* Resources */,
 				9A6CE83524C5B61A0084C860 /* SwiftLint */,
 				2C016ADA5569B48D67719A5B /* [CP] Embed Pods Frameworks */,
-				9A753BD824E745F800C1C334 /* Embed Frameworks */,
+				9AB463DA24EB4F9600B49F31 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -426,7 +425,6 @@
 				9A2A314424E7385200DCD545 /* UIViewExtension.swift in Sources */,
 				9A6CE81624C5B4DE0084C860 /* SceneDelegate.swift in Sources */,
 				9A2A314024E736D400DCD545 /* Draw.swift in Sources */,
-				9A8359E424E7514200C22AFA /* AvcaptureProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

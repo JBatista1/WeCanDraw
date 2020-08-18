@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AccessibilityFaceMouse/AccessibilityFaceMouse.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Data/Data.xcodeproj">
    </FileRef>
    <FileRef
@@ -15,9 +18,6 @@
    </FileRef>
    <FileRef
       location = "group:VoiceCommand/VoiceCommand.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:FaceTrack/FaceTrack.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:WeCanDraw.xcodeproj">

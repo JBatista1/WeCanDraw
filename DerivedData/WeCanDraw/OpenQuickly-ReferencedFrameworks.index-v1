@@ -7,13 +7,13 @@
 	<string>WeCanDraw</string>
 	<string>Swinject</string>
 	<string>Commons</string>
-	<string>FaceTrack</string>
-	<string>Vision</string>
+	<string>AccessibilityFaceMouse</string>
 	<string>XCTest</string>
+	<string>Vision</string>
 	<string>Foundation</string>
 	<string>VoiceCommand</string>
-	<string>Storage</string>
 	<string>UIKit</string>
+	<string>Storage</string>
 	<string>Data</string>
 </array>
 </plist>

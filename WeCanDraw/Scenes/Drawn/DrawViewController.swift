@@ -7,20 +7,20 @@
 //
 
 import UIKit
-import FaceTrack
 import AVFoundation
+import AccessibilityFaceMouse
 
-class DrawViewController: FaceCapture {
-    let customView = Draw()
+class DrawViewController: AdjustParametersViewController {
+//    let customView = Draw()
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(named: "cursorDefault")
-        imageView.contentMode = .scaleAspectFill
-        view.addSubview(imageView)
-        configureCaptureSession()
+//        imageView.image = UIImage(named: "cursorDefault")
+//        imageView.contentMode = .scaleAspectFill
+//        view.addSubview(imageView)
+//        configureCaptureSession()
     }
     override func loadView() {
-        view = customView
+//        view = customView
 
     }
     override func viewDidAppear(_ animated: Bool) {

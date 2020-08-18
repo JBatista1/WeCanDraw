@@ -186,10 +186,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AVFoundation;
+@import AccessibilityFaceMouse;
 @import CoreGraphics;
-@import CoreMedia;
-@import FaceTrack;
 @import UIKit;
 #endif
 
@@ -208,18 +206,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class AVCaptureOutput;
-@class AVCaptureConnection;
-@class NSBundle;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC9WeCanDraw26AcessibilityViewController")
-@interface AcessibilityViewController : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate>
-- (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIApplication;
 @class UISceneSession;
 @class UISceneConnectionOptions;
@@ -233,6 +219,7 @@ SWIFT_CLASS("_TtC9WeCanDraw11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
 
 SWIFT_CLASS("_TtC9WeCanDraw7NibView")
 @interface NibView : UIView
@@ -252,9 +239,10 @@ SWIFT_CLASS("_TtC9WeCanDraw4Draw")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSBundle;
 
 SWIFT_CLASS("_TtC9WeCanDraw18DrawViewController")
-@interface DrawViewController : FaceCapture
+@interface DrawViewController : AdjustParametersViewController
 - (void)viewDidLoad;
 - (void)loadView;
 - (void)viewDidAppear:(BOOL)animated;

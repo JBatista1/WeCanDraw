@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>429A2450-3E0B-447D-B08A-D928E8903839</key>
+		<key>045835F0-57E4-411F-B8F1-7EAA733BC763</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>429A2450-3E0B-447D-B08A-D928E8903839.xcactivitylog</string>
+			<string>045835F0-57E4-411F-B8F1-7EAA733BC763.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,13 +32,455 @@
 			<key>signature</key>
 			<string>Run WeCanDraw</string>
 			<key>timeStartedRecording</key>
-			<real>619400472.12902403</real>
+			<real>619409355.12907696</real>
 			<key>timeStoppedRecording</key>
-			<real>619400499.58172703</real>
+			<real>619409387.16575301</real>
 			<key>title</key>
 			<string>Run WeCanDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>429A2450-3E0B-447D-B08A-D928E8903839</string>
+			<string>045835F0-57E4-411F-B8F1-7EAA733BC763</string>
+		</dict>
+		<key>0A43BE6C-CC84-434B-9663-A86FF33A7310</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>0A43BE6C-CC84-434B-9663-A86FF33A7310.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409397.56200194</real>
+			<key>timeStoppedRecording</key>
+			<real>619409452.00921094</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>0A43BE6C-CC84-434B-9663-A86FF33A7310</string>
+		</dict>
+		<key>1F0C6389-A3FC-4C6C-B46F-82DD036D3C11</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1F0C6389-A3FC-4C6C-B46F-82DD036D3C11.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409462.83954406</real>
+			<key>timeStoppedRecording</key>
+			<real>619409549.47796905</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>1F0C6389-A3FC-4C6C-B46F-82DD036D3C11</string>
+		</dict>
+		<key>1F720BD4-75CE-4F06-83F5-65F5BB54A10D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1F720BD4-75CE-4F06-83F5-65F5BB54A10D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409283.66576695</real>
+			<key>timeStoppedRecording</key>
+			<real>619409294.08362198</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>1F720BD4-75CE-4F06-83F5-65F5BB54A10D</string>
+		</dict>
+		<key>21E58773-4A81-4FD7-BAC3-F4FF5049177F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>21E58773-4A81-4FD7-BAC3-F4FF5049177F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409776.43530798</real>
+			<key>timeStoppedRecording</key>
+			<real>619409795.58030701</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>21E58773-4A81-4FD7-BAC3-F4FF5049177F</string>
+		</dict>
+		<key>3247C4BC-917D-41FF-80AA-582999402F57</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3247C4BC-917D-41FF-80AA-582999402F57.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409103.40219498</real>
+			<key>timeStoppedRecording</key>
+			<real>619409133.65813601</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>3247C4BC-917D-41FF-80AA-582999402F57</string>
+		</dict>
+		<key>36671BFF-8114-44E5-8E69-CB6C17E0806F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>36671BFF-8114-44E5-8E69-CB6C17E0806F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409152.21602201</real>
+			<key>timeStoppedRecording</key>
+			<real>619409231.07982504</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>36671BFF-8114-44E5-8E69-CB6C17E0806F</string>
+		</dict>
+		<key>4A219802-8A4B-49D3-BF09-25031D8BF5E3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>4A219802-8A4B-49D3-BF09-25031D8BF5E3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409720.39589798</real>
+			<key>timeStoppedRecording</key>
+			<real>619409766.737257</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>4A219802-8A4B-49D3-BF09-25031D8BF5E3</string>
+		</dict>
+		<key>78386D78-5E56-4721-B2CE-82F1A8CACC52</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>78386D78-5E56-4721-B2CE-82F1A8CACC52.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409243.06426597</real>
+			<key>timeStoppedRecording</key>
+			<real>619409254.07097495</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>78386D78-5E56-4721-B2CE-82F1A8CACC52</string>
+		</dict>
+		<key>88C91F47-AB66-42C8-B7DD-789C813BF838</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>88C91F47-AB66-42C8-B7DD-789C813BF838.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409570.97073698</real>
+			<key>timeStoppedRecording</key>
+			<real>619409677.28429198</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>88C91F47-AB66-42C8-B7DD-789C813BF838</string>
+		</dict>
+		<key>8B14AE28-B0E7-4F02-B992-F5731ECA1146</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8B14AE28-B0E7-4F02-B992-F5731ECA1146.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409821.52697504</real>
+			<key>timeStoppedRecording</key>
+			<real>619409861.63010597</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>8B14AE28-B0E7-4F02-B992-F5731ECA1146</string>
+		</dict>
+		<key>8C170AE6-3334-4D52-B627-784ACED9192D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8C170AE6-3334-4D52-B627-784ACED9192D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409010.493487</real>
+			<key>timeStoppedRecording</key>
+			<real>619409026.35448503</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>8C170AE6-3334-4D52-B627-784ACED9192D</string>
+		</dict>
+		<key>B9DC99A0-54A9-4CB1-BE14-96B0EB1125B8</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B9DC99A0-54A9-4CB1-BE14-96B0EB1125B8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409568.68830395</real>
+			<key>timeStoppedRecording</key>
+			<real>619409570.38773096</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>B9DC99A0-54A9-4CB1-BE14-96B0EB1125B8</string>
+		</dict>
+		<key>BC503052-D5EC-4A7D-AAA1-DF327B138593</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>BC503052-D5EC-4A7D-AAA1-DF327B138593.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>619409688.41179502</real>
+			<key>timeStoppedRecording</key>
+			<real>619409710.72003198</real>
+			<key>title</key>
+			<string>Run WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>BC503052-D5EC-4A7D-AAA1-DF327B138593</string>
 		</dict>
 	</dict>
 </dict>

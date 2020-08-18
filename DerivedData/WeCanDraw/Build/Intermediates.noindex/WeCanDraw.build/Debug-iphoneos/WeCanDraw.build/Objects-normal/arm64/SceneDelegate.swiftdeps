@@ -14,9 +14,9 @@ provides-dynamic-lookup:
 - "sceneWillResignActive"
 - "window"
 depends-top-level:
+- !private "AdjustParametersViewController"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "DrawViewController"
 - "SceneDelegate"
 - "UIResponder"
 - "UIScene"
@@ -26,12 +26,13 @@ depends-top-level:
 - "UIWindowSceneDelegate"
 depends-member:
 - !private ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "init"]
+- !private ["22AccessibilityFaceMouse30AdjustParametersViewControllerC", "init"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - !private ["So15CALayerDelegateP", "windowScene"]
+- !private ["s7CVarArgP", "AdjustParametersViewController"]
 - ["s7CVarArgP", "ConnectionOptions"]
-- !private ["s7CVarArgP", "DrawViewController"]
 - !private ["s7CVarArgP", "UIWindow"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "coordinateSpace"]
@@ -48,8 +49,8 @@ depends-member:
 - ["s7CVarArgP", "stateRestorationActivityForScene"]
 - ["s7CVarArgP", "window"]
 - ["s7CVarArgP", "windowScene"]
+- !private ["s28CustomDebugStringConvertibleP", "AdjustParametersViewController"]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
-- !private ["s28CustomDebugStringConvertibleP", "DrawViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "coordinateSpace"]
@@ -66,8 +67,8 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "stateRestorationActivityForScene"]
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s28CustomDebugStringConvertibleP", "windowScene"]
+- !private ["s23CustomStringConvertibleP", "AdjustParametersViewController"]
 - ["s23CustomStringConvertibleP", "ConnectionOptions"]
-- !private ["s23CustomStringConvertibleP", "DrawViewController"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "coordinateSpace"]
@@ -84,10 +85,8 @@ depends-member:
 - ["s23CustomStringConvertibleP", "stateRestorationActivityForScene"]
 - ["s23CustomStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "windowScene"]
-- !private ["9WeCanDraw0C14ViewControllerC", "deinit"]
-- !private ["9WeCanDraw0C14ViewControllerC", "init"]
+- !private ["SQ", "AdjustParametersViewController"]
 - ["SQ", "ConnectionOptions"]
-- !private ["SQ", "DrawViewController"]
 - !private ["SQ", "UIWindow"]
 - ["SQ", ""]
 - !private ["SQ", "coordinateSpace"]
@@ -104,9 +103,9 @@ depends-member:
 - ["SQ", "stateRestorationActivityForScene"]
 - ["SQ", "window"]
 - ["SQ", "windowScene"]
-- !private ["9FaceTrack0A7CaptureC", "init"]
+- !private ["22AccessibilityFaceMouse0bC14ViewControllerC", "init"]
+- !private ["SH", "AdjustParametersViewController"]
 - ["SH", "ConnectionOptions"]
-- !private ["SH", "DrawViewController"]
 - !private ["SH", "UIWindow"]
 - ["SH", ""]
 - !private ["SH", "coordinateSpace"]
@@ -128,8 +127,8 @@ depends-member:
 - !private ["So8NSCodingP", "rootViewController"]
 - !private ["So8NSCodingP", "windowScene"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So8NSObjectC", "AdjustParametersViewController"]
 - ["So8NSObjectC", "ConnectionOptions"]
-- !private ["So8NSObjectC", "DrawViewController"]
 - ["So8NSObjectC", "UIScene"]
 - ["So8NSObjectC", "UISceneSession"]
 - ["So8NSObjectC", "UIWindow"]
@@ -148,8 +147,8 @@ depends-member:
 - ["So8NSObjectC", "stateRestorationActivityForScene"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectC", "windowScene"]
+- !private ["So8NSObjectP", "AdjustParametersViewController"]
 - ["So8NSObjectP", "ConnectionOptions"]
-- !private ["So8NSObjectP", "DrawViewController"]
 - !private ["So8NSObjectP", "UIWindow"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "bounds"]
@@ -167,7 +166,7 @@ depends-member:
 - ["So8NSObjectP", "stateRestorationActivityForScene"]
 - ["So8NSObjectP", "window"]
 - ["So8NSObjectP", "windowScene"]
-- !private ["9WeCanDraw13SceneDelegateC", "DrawViewController"]
+- !private ["9WeCanDraw13SceneDelegateC", "AdjustParametersViewController"]
 - ["9WeCanDraw13SceneDelegateC", "UIScene"]
 - ["9WeCanDraw13SceneDelegateC", "UISceneSession"]
 - ["9WeCanDraw13SceneDelegateC", "UIWindow"]
@@ -222,8 +221,8 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "makeKeyAndVisible"]
 - !private ["So24UILargeContentViewerItemP", "rootViewController"]
 - !private ["So24UILargeContentViewerItemP", "windowScene"]
+- !private ["So30UIPasteConfigurationSupportingP", "AdjustParametersViewController"]
 - ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
-- !private ["So30UIPasteConfigurationSupportingP", "DrawViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "coordinateSpace"]
@@ -240,8 +239,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "stateRestorationActivityForScene"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "windowScene"]
+- !private ["So11UIResponderC", "AdjustParametersViewController"]
 - ["So11UIResponderC", "ConnectionOptions"]
-- !private ["So11UIResponderC", "DrawViewController"]
 - ["So11UIResponderC", "UIScene"]
 - ["So11UIResponderC", "UISceneSession"]
 - ["So11UIResponderC", "UIWindow"]
@@ -261,8 +260,8 @@ depends-member:
 - ["So11UIResponderC", "stateRestorationActivityForScene"]
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", "windowScene"]
+- !private ["So30UIResponderStandardEditActionsP", "AdjustParametersViewController"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
-- !private ["So30UIResponderStandardEditActionsP", "DrawViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "coordinateSpace"]
@@ -281,7 +280,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "windowScene"]
 - ["So7UISceneC", "ConnectionOptions"]
 - !private ["So7UISceneC", "coordinateSpace"]
-- !private ["So15UISceneDelegateP", "DrawViewController"]
+- !private ["So15UISceneDelegateP", "AdjustParametersViewController"]
 - !private ["So15UISceneDelegateP", "UIWindow"]
 - ["So15UISceneDelegateP", ""]
 - ["So15UISceneDelegateP", "scene"]
@@ -299,8 +298,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
 - !private ["So18UITraitEnvironmentP", "windowScene"]
+- !private ["So23UIUserActivityRestoringP", "AdjustParametersViewController"]
 - ["So23UIUserActivityRestoringP", "ConnectionOptions"]
-- !private ["So23UIUserActivityRestoringP", "DrawViewController"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "coordinateSpace"]
@@ -327,7 +326,7 @@ depends-member:
 - !private ["So8UIWindowC", "rootViewController"]
 - !private ["So8UIWindowC", "windowScene"]
 - !private ["So13UIWindowSceneC", "coordinateSpace"]
-- !private ["So21UIWindowSceneDelegateP", "DrawViewController"]
+- !private ["So21UIWindowSceneDelegateP", "AdjustParametersViewController"]
 - !private ["So21UIWindowSceneDelegateP", "UIWindow"]
 - ["So21UIWindowSceneDelegateP", ""]
 - ["So21UIWindowSceneDelegateP", "scene"]
@@ -340,8 +339,8 @@ depends-member:
 - ["So21UIWindowSceneDelegateP", "stateRestorationActivityForScene"]
 - ["So21UIWindowSceneDelegateP", "window"]
 - ["So21UIWindowSceneDelegateP", "windowScene"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AdjustParametersViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "DrawViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "coordinateSpace"]
@@ -358,8 +357,8 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "stateRestorationActivityForScene"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "windowScene"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AdjustParametersViewController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DrawViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "coordinateSpace"]
@@ -382,13 +381,13 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "windowScene"]
 depends-nominal:
 - !private "So44AVCaptureVideoDataOutputSampleBufferDelegateP"
+- !private "22AccessibilityFaceMouse30AdjustParametersViewControllerC"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
-- !private "9WeCanDraw0C14ViewControllerC"
 - "SQ"
-- !private "9FaceTrack0A7CaptureC"
+- !private "22AccessibilityFaceMouse0bC14ViewControllerC"
 - "SH"
 - !private "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
@@ -443,10 +442,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
-- "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/DerivedData/WeCanDraw/Build/Products/Debug-iphoneos/FaceTrack.framework/Modules/FaceTrack.swiftmodule/arm64-apple-ios.swiftmodule"
-- "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/DerivedData/WeCanDraw/Build/Products/Debug-iphoneos/FaceTrack.framework/Headers/FaceTrack.h"
-- "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/DerivedData/WeCanDraw/Build/Products/Debug-iphoneos/FaceTrack.framework/Headers/FaceTrack-Swift.h"
-- "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/DerivedData/WeCanDraw/Build/Products/Debug-iphoneos/FaceTrack.framework/Modules/module.modulemap"
+- "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/DerivedData/WeCanDraw/Build/Products/Debug-iphoneos/AccessibilityFaceMouse.framework/Modules/AccessibilityFaceMouse.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/DerivedData/WeCanDraw/Build/Products/Debug-iphoneos/AccessibilityFaceMouse.framework/Headers/AccessibilityFaceMouse.h"
+- "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/DerivedData/WeCanDraw/Build/Products/Debug-iphoneos/AccessibilityFaceMouse.framework/Headers/AccessibilityFaceMouse-Swift.h"
+- "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/DerivedData/WeCanDraw/Build/Products/Debug-iphoneos/AccessibilityFaceMouse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/CoreML.framework/Headers/CoreML.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
@@ -467,4 +466,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "127201c8c716b7030f8c10092b30daff"
+interface-hash: "9c2d354c73caf9a2e51e179748e8e2e7"

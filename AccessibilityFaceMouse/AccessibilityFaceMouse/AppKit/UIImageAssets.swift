@@ -10,14 +10,15 @@ import UIKit
 
 extension UIImage {
 
-   public class var smile: UIImage {
+    public class var smile: UIImage {
         return UIImage(named: "smile")!
     }
     public class var cursor: UIImage {
         return UIImage(named: "cursorDefault")!
     }
     public class var cursorHand: UIImage {
-        return UIImage(named: "cursorHand", in: Bundle(for: self), compatibleWith: nil)!
+        let bundle = Bundle(for: FaceMouseViewController.self)
+        return UIImage(named: "cursorDefaultHand", in: bundle, compatibleWith: nil)!
 
     }
 }

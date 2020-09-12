@@ -18,6 +18,8 @@
 		9A30256D24EB56E400418006 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A30256C24EB56E400418006 /* UIViewExtension.swift */; };
 		9A30256F24EB570300418006 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A30256E24EB570300418006 /* NibView.swift */; };
 		9A30257424EB574E00418006 /* AdjustParameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A30257324EB574E00418006 /* AdjustParameters.xib */; };
+		9A6E14DF250C42870000FB0E /* SelectorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E14DE250C42870000FB0E /* SelectorEnum.swift */; };
+		9A6E14E1250C434C0000FB0E /* GetMaxMoviment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E14E0250C434C0000FB0E /* GetMaxMoviment.swift */; };
 		9AB463DD24EB506C00B49F31 /* FaceMouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB463DC24EB506C00B49F31 /* FaceMouseViewController.swift */; };
 		9AB463DF24EB50A400B49F31 /* MousePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB463DE24EB50A400B49F31 /* MousePosition.swift */; };
 		9AE0C36724EB5A6F00AA7E03 /* UIImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE0C36624EB5A6F00AA7E03 /* UIImageAssets.swift */; };
@@ -49,6 +51,8 @@
 		9A30256C24EB56E400418006 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9A30256E24EB570300418006 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		9A30257324EB574E00418006 /* AdjustParameters.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdjustParameters.xib; sourceTree = "<group>"; };
+		9A6E14DE250C42870000FB0E /* SelectorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorEnum.swift; sourceTree = "<group>"; };
+		9A6E14E0250C434C0000FB0E /* GetMaxMoviment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMaxMoviment.swift; sourceTree = "<group>"; };
 		9AB463DC24EB506C00B49F31 /* FaceMouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMouseViewController.swift; sourceTree = "<group>"; };
 		9AB463DE24EB50A400B49F31 /* MousePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousePosition.swift; sourceTree = "<group>"; };
 		9AE0C36624EB5A6F00AA7E03 /* UIImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageAssets.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				9A30256424EB514D00418006 /* MathLibs.swift */,
+				9A6E14DE250C42870000FB0E /* SelectorEnum.swift */,
+				9A6E14E0250C434C0000FB0E /* GetMaxMoviment.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -318,6 +324,8 @@
 				9A30256A24EB56A900418006 /* AdjustParameters.swift in Sources */,
 				9AB463DF24EB50A400B49F31 /* MousePosition.swift in Sources */,
 				9A30256F24EB570300418006 /* NibView.swift in Sources */,
+				9A6E14DF250C42870000FB0E /* SelectorEnum.swift in Sources */,
+				9A6E14E1250C434C0000FB0E /* GetMaxMoviment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

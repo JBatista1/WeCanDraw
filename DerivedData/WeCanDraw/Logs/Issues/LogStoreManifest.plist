@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>3981527F-B302-4670-A226-BB737EA09ED6</key>
+		<key>0ED543A6-00E3-4775-BC81-257BB631097B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>3981527F-B302-4670-A226-BB737EA09ED6.xcactivitylog</string>
+			<string>0ED543A6-00E3-4775-BC81-257BB631097B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,43 +26,15 @@
 			<key>signature</key>
 			<string>AccessibilityFaceMouse-gxsixfmdsafgawdcrhfkregowmiw</string>
 			<key>timeStartedRecording</key>
-			<real>619409804.090693</real>
+			<real>621564163.30361903</real>
 			<key>timeStoppedRecording</key>
-			<real>619409810.60193706</real>
+			<real>621564166.56761396</real>
 			<key>title</key>
 			<string>Build target AccessibilityFaceMouse</string>
 			<key>uniqueIdentifier</key>
-			<string>3981527F-B302-4670-A226-BB737EA09ED6</string>
+			<string>0ED543A6-00E3-4775-BC81-257BB631097B</string>
 		</dict>
-		<key>5BF923FE-D812-45E2-9ED9-36158ED2EDD2</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>5BF923FE-D812-45E2-9ED9-36158ED2EDD2.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>Swinject-eoghonzltokttxbplbqozzlwjupm</string>
-			<key>timeStartedRecording</key>
-			<real>619409804.08730304</real>
-			<key>timeStoppedRecording</key>
-			<real>619409804.095137</real>
-			<key>title</key>
-			<string>Build target Swinject</string>
-			<key>uniqueIdentifier</key>
-			<string>5BF923FE-D812-45E2-9ED9-36158ED2EDD2</string>
-		</dict>
-		<key>80E185F8-ECB8-450B-B142-8D6AE9BB5CAB</key>
+		<key>808FB09D-7BA6-4053-A06B-3FAE16831DCC</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -71,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>80E185F8-ECB8-450B-B142-8D6AE9BB5CAB.xcactivitylog</string>
+			<string>808FB09D-7BA6-4053-A06B-3FAE16831DCC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,15 +54,15 @@
 			<key>signature</key>
 			<string>WeCanDraw-byxbsqppnbvueqgjumnjqecmclqg</string>
 			<key>timeStartedRecording</key>
-			<real>619409804.10930395</real>
+			<real>621564166.56887698</real>
 			<key>timeStoppedRecording</key>
-			<real>619409821.49218297</real>
+			<real>621564171.89565098</real>
 			<key>title</key>
 			<string>Build target WeCanDraw</string>
 			<key>uniqueIdentifier</key>
-			<string>80E185F8-ECB8-450B-B142-8D6AE9BB5CAB</string>
+			<string>808FB09D-7BA6-4053-A06B-3FAE16831DCC</string>
 		</dict>
-		<key>8AD1B168-E714-4F58-939B-89AF0D46DE80</key>
+		<key>8CA92FCF-8A4A-4366-98AA-EFAE20A1DAC1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -99,7 +71,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>8AD1B168-E714-4F58-939B-89AF0D46DE80.xcactivitylog</string>
+			<string>8CA92FCF-8A4A-4366-98AA-EFAE20A1DAC1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -108,17 +80,17 @@
 				<string>S</string>
 			</dict>
 			<key>signature</key>
-			<string>Pods-WeCanDraw-eoghonzltokttxbplbqozzlwjupm</string>
+			<string>Swinject-eoghonzltokttxbplbqozzlwjupm</string>
 			<key>timeStartedRecording</key>
-			<real>619409804.106987</real>
+			<real>621561864.11602104</real>
 			<key>timeStoppedRecording</key>
-			<real>619409804.112831</real>
+			<real>621561868.228791</real>
 			<key>title</key>
-			<string>Build target Pods-WeCanDraw</string>
+			<string>Build target Swinject</string>
 			<key>uniqueIdentifier</key>
-			<string>8AD1B168-E714-4F58-939B-89AF0D46DE80</string>
+			<string>8CA92FCF-8A4A-4366-98AA-EFAE20A1DAC1</string>
 		</dict>
-		<key>E825A0F1-55BD-40D2-AFD0-1C83E570B9F1</key>
+		<key>A2D9E44B-7F5E-4B66-997D-78480A33904C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -127,7 +99,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>E825A0F1-55BD-40D2-AFD0-1C83E570B9F1.xcactivitylog</string>
+			<string>A2D9E44B-7F5E-4B66-997D-78480A33904C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -138,13 +110,41 @@
 			<key>signature</key>
 			<string>SwinjectAutoregistration-eoghonzltokttxbplbqozzlwjupm</string>
 			<key>timeStartedRecording</key>
-			<real>619409804.09611201</real>
+			<real>621561867.96152794</real>
 			<key>timeStoppedRecording</key>
-			<real>619409804.10561895</real>
+			<real>621561874.53267205</real>
 			<key>title</key>
 			<string>Build target SwinjectAutoregistration</string>
 			<key>uniqueIdentifier</key>
-			<string>E825A0F1-55BD-40D2-AFD0-1C83E570B9F1</string>
+			<string>A2D9E44B-7F5E-4B66-997D-78480A33904C</string>
+		</dict>
+		<key>EC623B75-EA94-42A4-81B9-E16D9309CAB0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>EC623B75-EA94-42A4-81B9-E16D9309CAB0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Pods-WeCanDraw-eoghonzltokttxbplbqozzlwjupm</string>
+			<key>timeStartedRecording</key>
+			<real>621561874.34651697</real>
+			<key>timeStoppedRecording</key>
+			<real>621561874.65064204</real>
+			<key>title</key>
+			<string>Build target Pods-WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>EC623B75-EA94-42A4-81B9-E16D9309CAB0</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

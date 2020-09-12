@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A04941F250D33E800BCB5F7 /* UINotificationCenter+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A04941E250D33E800BCB5F7 /* UINotificationCenter+Name.swift */; };
 		9A16520924EB6C5300834289 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A16520824EB6C5300834289 /* Images.xcassets */; };
 		9A16520A24EB6D1100834289 /* UIImageAssets.swift in Resources */ = {isa = PBXBuildFile; fileRef = 9AE0C36624EB5A6F00AA7E03 /* UIImageAssets.swift */; };
 		9A22CE3E24EB4DFA001EB734 /* AccessibilityFaceMouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A22CE3424EB4DFA001EB734 /* AccessibilityFaceMouse.framework */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A04941E250D33E800BCB5F7 /* UINotificationCenter+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINotificationCenter+Name.swift"; sourceTree = "<group>"; };
 		9A16520824EB6C5300834289 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A22CE3424EB4DFA001EB734 /* AccessibilityFaceMouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccessibilityFaceMouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A22CE3724EB4DFA001EB734 /* AccessibilityFaceMouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessibilityFaceMouse.h; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				9A30256C24EB56E400418006 /* UIViewExtension.swift */,
 				9A30256E24EB570300418006 /* NibView.swift */,
+				9A04941E250D33E800BCB5F7 /* UINotificationCenter+Name.swift */,
 			);
 			path = Extenion;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A04941F250D33E800BCB5F7 /* UINotificationCenter+Name.swift in Sources */,
 				9A30256D24EB56E400418006 /* UIViewExtension.swift in Sources */,
 				9AE0C36D24EB62B100AA7E03 /* UIcolorAssets.swift in Sources */,
 				9AB463DD24EB506C00B49F31 /* FaceMouseViewController.swift in Sources */,

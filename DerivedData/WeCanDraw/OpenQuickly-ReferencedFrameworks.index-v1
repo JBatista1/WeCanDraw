@@ -3,17 +3,18 @@
 <plist version="1.0">
 <array>
 	<string>AVFoundation</string>
-	<string>WeCanDraw</string>
-	<string>Swinject</string>
 	<string>Domain</string>
+	<string>Swinject</string>
+	<string>WeCanDraw</string>
 	<string>Commons</string>
 	<string>AccessibilityFaceMouse</string>
-	<string>Vision</string>
 	<string>XCTest</string>
+	<string>Vision</string>
 	<string>VoiceCommand</string>
 	<string>UIKit</string>
 	<string>Storage</string>
 	<string>Foundation</string>
 	<string>Data</string>
+	<string>Combine</string>
 </array>
 </plist>

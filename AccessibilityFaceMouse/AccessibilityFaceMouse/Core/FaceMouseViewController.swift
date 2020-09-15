@@ -16,29 +16,10 @@ open class FaceMouseViewController: UIViewController {
     fileprivate var previewLayer: AVCaptureVideoPreviewLayer!
     fileprivate var orientationVideo = CGImagePropertyOrientation.down
     fileprivate var sequenceHandler = VNSequenceRequestHandler()
-    fileprivate var getMax: ((CGFloat) -> Void)?
-    fileprivate var startCapture: Bool = false
-    fileprivate var getXAxis = true
-
-    var medium: CGFloat = 100 {
-        didSet {
-            GetMaxMoviment.insertMedium(withValue: medium)
-        }
-    }
-
-
-    private var count = 0
 
     let cursor = MousePosition(sensibinity: 20, decimalPlace: 1000, initialPosition: CGPoint(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2))
+
     public var imageView = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 30, height: 30))
-
-    open override func viewDidLoad() {
-        NotificationCenter.default.addObserver(self, selector: #selector(finishCapture(_:)), name: .finishCapture, object: nil)
-    }
-
-    @objc func finishCapture(_ notification: Notification) {
-    }
-
     let dataOutputQueue = DispatchQueue(
         label: "video data queue",
         qos: .userInitiated,
@@ -47,41 +28,6 @@ open class FaceMouseViewController: UIViewController {
 
     func getView() -> AVCaptureVideoPreviewLayer {
         return previewLayer
-    }
-
-    private func getMaxRigth() {
-        startCapture = true
-        getXAxis = true
-        getMax = GetMaxMoviment.calcMaxRight(withValue: )
-    }
-
-    private func getMaxLeft() {
-        startCapture = true
-        getXAxis = true
-        getMax = GetMaxMoviment.calcMaxLeft(withValue:)
-    }
-
-    private func getMaxTop() {
-        startCapture = true
-        getXAxis = false
-        getMax = GetMaxMoviment.calcMaxTop(withValue:)
-    }
-
-    private func getMaxDown() {
-        startCapture = true
-        getXAxis = false
-        getMax = GetMaxMoviment.calcMaxDown(withValue:)
-    }
-
-    private func getFaceStopped() {
-
-        startCapture = true
-        getXAxis = true
-        getMax = GetMaxMoviment.calcStoppedXAxis(withValue: )
-    }
-
-    private func getAllPositions() -> Max {
-        GetMaxMoviment.getMax()
     }
 
     public func configureCaptureSession() {
@@ -142,25 +88,11 @@ extension FaceMouseViewController: AVCaptureVideoDataOutputSampleBufferDelegate 
         if let landmark = results.first?.landmarks?.nose {
             guard let point = landmark.normalizedPoints.first else { return }
             DispatchQueue.main.async {
-                if self.startCapture {
-                    if self.getXAxis {
-                        self.getMax!(point.x)
-                    } else {
-                        self.getMax!(point.y)
-                    }
-                    self.count += 1
-                }
-
-                if self.count > 100 {
-                    self.count = 0
-                    self.startCapture = false
-                    NotificationCenter.default.post(name: .finishCapture, object: nil)
-                }
+                let newPosition = self.cursor.moveTo(usingPoint: point)
+                UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.1, options: .transitionCrossDissolve, animations: {
+                    self.imageView.center = newPosition
+                }, completion: nil)
             }
         }
     }
 }
-//let newPosition = self.cursor.moveTo(usingPoint: point)
-//UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.1, options: .transitionCrossDissolve, animations: {
-//    self.imageView.center = newPosition
-//}, completion: nil)

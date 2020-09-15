@@ -8,16 +8,13 @@
 
 import UIKit
 import Combine
-open class AdjustParametersViewController: FaceMouseViewController {
+open class AdjustParametersViewController: FaceMouseLimitedMovimenteViewController {
     let customView = AdjustParameters()
     private var isFinishDetect: AnyCancellable?
     open override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(named: "cursorDefaultHand")
-        imageView.contentMode = .scaleAspectFill
-        view.addSubview(imageView)
-        configureCaptureSession()
         customView.delegate = self
+        labelStartScan = customView.actionLbl
        
     }
 
@@ -31,8 +28,11 @@ open class AdjustParametersViewController: FaceMouseViewController {
 }
 extension AdjustParametersViewController: AdjustParametersDelegate {
     func initial() {
-        medium = 200
-        customView.actionLbl.text = "Mova a cara para a esquerda"
+        self.customView.actionLbl.text = "Mova sua cabeça para a a direita"
+        getMaxLeft { value in
+            self.customView.actionLbl.text = "Capturado and \(value)"
+            self.customView.changeButtonDesign()
+        }
     }
 
     func final() {

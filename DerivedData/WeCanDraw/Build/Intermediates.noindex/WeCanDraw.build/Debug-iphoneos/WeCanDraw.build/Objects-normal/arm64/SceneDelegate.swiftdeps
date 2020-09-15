@@ -104,7 +104,7 @@ depends-member:
 - ["SQ", "stateRestorationActivityForScene"]
 - ["SQ", "window"]
 - ["SQ", "windowScene"]
-- !private ["22AccessibilityFaceMouse0bC14ViewControllerC", "init"]
+- !private ["22AccessibilityFaceMouse0bC30LimitedMovimenteViewControllerC", "init"]
 - !private ["SH", "AdjustParametersViewController"]
 - ["SH", "ConnectionOptions"]
 - !private ["SH", "UIWindow"]
@@ -389,7 +389,7 @@ depends-nominal:
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "SQ"
-- !private "22AccessibilityFaceMouse0bC14ViewControllerC"
+- !private "22AccessibilityFaceMouse0bC30LimitedMovimenteViewControllerC"
 - "SH"
 - !private "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"

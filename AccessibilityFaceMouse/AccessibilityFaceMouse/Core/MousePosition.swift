@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class MousePosition {
-    let math = MathLibs()
     let sensibility: CGFloat!
     let decimalPlace: CGFloat!
     let marginMovimentX: Float = 0.02
@@ -30,8 +29,8 @@ class MousePosition {
 
     func moveTo(usingPoint point: CGPoint) -> CGPoint {
 
-        let positionX = math.normalize(value: point.x, decimalValue: decimalPlace)
-        let positionY = math.normalize(value: point.y, decimalValue: decimalPlace)
+        let positionX = MathLibs.normalize(value: point.x, decimalValue: decimalPlace)
+        let positionY = MathLibs.normalize(value: point.y, decimalValue: decimalPlace)
         var position = CGPoint()
 
         if positionX >= 0.45 {

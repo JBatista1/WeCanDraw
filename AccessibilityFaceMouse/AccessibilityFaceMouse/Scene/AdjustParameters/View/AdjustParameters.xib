@@ -23,7 +23,7 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="xcG-Ax-bgY">
                     <rect key="frame" x="62.5" y="158.5" width="250" height="250"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="250" id="Qf8-9D-sqH"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="Qf8-9D-sqH"/>
                         <constraint firstAttribute="width" constant="250" id="kuA-F8-f1X"/>
                     </constraints>
                 </imageView>
@@ -61,7 +61,7 @@
                 <constraint firstItem="8co-E7-wio" firstAttribute="leading" secondItem="tYQ-0X-H4c" secondAttribute="leading" constant="30" id="CQz-RA-wJw"/>
                 <constraint firstItem="tYQ-0X-H4c" firstAttribute="trailing" secondItem="dLB-Pi-t2C" secondAttribute="trailing" constant="30" id="K1T-1a-uua"/>
                 <constraint firstItem="tYQ-0X-H4c" firstAttribute="trailing" secondItem="8co-E7-wio" secondAttribute="trailing" constant="30" id="Zfa-fp-Gl7"/>
-                <constraint firstItem="xcG-Ax-bgY" firstAttribute="width" secondItem="Ry7-OB-4jG" secondAttribute="height" multiplier="250:667" id="eGc-1n-cWe"/>
+                <constraint firstItem="xcG-Ax-bgY" firstAttribute="width" relation="lessThanOrEqual" secondItem="Ry7-OB-4jG" secondAttribute="height" multiplier="250:667" id="eGc-1n-cWe"/>
                 <constraint firstItem="xcG-Ax-bgY" firstAttribute="centerY" secondItem="tYQ-0X-H4c" secondAttribute="centerY" constant="-50" id="gNA-bX-RLP"/>
                 <constraint firstItem="xcG-Ax-bgY" firstAttribute="centerX" secondItem="tYQ-0X-H4c" secondAttribute="centerX" id="grd-Ko-7A6"/>
                 <constraint firstItem="dLB-Pi-t2C" firstAttribute="top" secondItem="tYQ-0X-H4c" secondAttribute="top" constant="20" id="h5n-KI-rf8"/>

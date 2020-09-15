@@ -30,6 +30,9 @@ class AdjustParameters: NibView {
         fatalError("init(coder:) has not been implemented")
     }
     @IBAction func tapButton(_ sender: Any) {
+        changeButtonDesign()
+    }
+    func changeButtonDesign() {
         if changeColor {
             actionButton.backgroundColor = UIColor.pinkApp
             actionButton.setTitle("Cancelar", for: .normal)
@@ -41,6 +44,5 @@ class AdjustParameters: NibView {
             changeColor = !changeColor
             delegate.final()
         }
-
     }
 }

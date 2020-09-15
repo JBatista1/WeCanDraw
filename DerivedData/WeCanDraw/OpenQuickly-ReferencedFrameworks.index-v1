@@ -10,11 +10,11 @@
 	<string>AccessibilityFaceMouse</string>
 	<string>XCTest</string>
 	<string>Vision</string>
-	<string>VoiceCommand</string>
 	<string>UIKit</string>
-	<string>Storage</string>
-	<string>Foundation</string>
-	<string>Data</string>
+	<string>VoiceCommand</string>
 	<string>Combine</string>
+	<string>Storage</string>
+	<string>Data</string>
+	<string>Foundation</string>
 </array>
 </plist>

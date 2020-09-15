@@ -8,8 +8,8 @@
 
 import Foundation
 import UIKit
-struct MathLibs {
-    func normalize(value: CGFloat, decimalValue: CGFloat) -> CGFloat {
+public struct MathLibs {
+    static func normalize(value: CGFloat, decimalValue: CGFloat) -> CGFloat {
         let normalizeValue = floor(decimalValue * value)
         let newValue = CGFloat(normalizeValue / decimalValue)
         return newValue

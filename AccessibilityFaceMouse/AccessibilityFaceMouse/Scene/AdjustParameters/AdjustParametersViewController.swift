@@ -22,20 +22,22 @@ open class AdjustParametersViewController: FaceMouseLimitedMovimenteViewControll
         view = customView
     }
 
-    override func finishCapture(_ notification: Notification) {
-        print("Fui chamado")
-    }
 }
 extension AdjustParametersViewController: AdjustParametersDelegate {
+    func final() {
+        stopCaptureFace()
+    }
+
     func initial() {
         self.customView.actionLbl.text = "Mova sua cabeça para a a direita"
-        getMaxLeft { value in
-            self.customView.actionLbl.text = "Capturado and \(value)"
-            self.customView.changeButtonDesign()
+        getFaceStopped { (valueX, valueY) in
+            print(valueX)
+            print(valueY)
+        }
+//        getMaxLeft { value in
+//            self.customView.actionLbl.text = "Capturado and \(value)"
+//            self.customView.changeButtonDesign()
         }
     }
 
-    func final() {
 
-    }
-}

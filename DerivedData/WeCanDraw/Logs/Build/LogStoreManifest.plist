@@ -74,6 +74,40 @@
 			<key>uniqueIdentifier</key>
 			<string>0337F8C8-7488-4EC7-8F94-70908E8294DF</string>
 		</dict>
+		<key>09F8E17C-4D14-4D63-B9B2-88AD0FE17E40</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>09F8E17C-4D14-4D63-B9B2-88AD0FE17E40.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>622001605.34781694</real>
+			<key>timeStoppedRecording</key>
+			<real>622001614.53322804</real>
+			<key>title</key>
+			<string>Build WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>09F8E17C-4D14-4D63-B9B2-88AD0FE17E40</string>
+		</dict>
 		<key>0FA57014-B464-43BE-8118-256BA8694311</key>
 		<dict>
 			<key>className</key>
@@ -2249,6 +2283,40 @@
 			<string>Build WeCanDraw</string>
 			<key>uniqueIdentifier</key>
 			<string>C1D289C0-CCBC-4996-9A79-0B02196FD3AF</string>
+		</dict>
+		<key>C6160A22-BE2F-4006-A705-79450E54AD58</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C6160A22-BE2F-4006-A705-79450E54AD58.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WeCanDraw project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WeCanDraw</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build WeCanDraw</string>
+			<key>timeStartedRecording</key>
+			<real>622001715.75273299</real>
+			<key>timeStoppedRecording</key>
+			<real>622001727.28399706</real>
+			<key>title</key>
+			<string>Build WeCanDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>C6160A22-BE2F-4006-A705-79450E54AD58</string>
 		</dict>
 		<key>C6D70F57-E2D7-42B2-99FD-44E58D0E696E</key>
 		<dict>

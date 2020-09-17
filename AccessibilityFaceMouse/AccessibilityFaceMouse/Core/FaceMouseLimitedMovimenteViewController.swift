@@ -35,7 +35,10 @@ open class FaceMouseLimitedMovimenteViewController: UIViewController {
     fileprivate var capturedValue: AnyCancellable?
 
     var medium: CGFloat = 200 
-
+    open override func viewDidLoad() {
+        configureCaptureSession()
+        session.stopRunning()
+    }
     let dataOutputQueue = DispatchQueue(
         label: "video data queue",
         qos: .userInitiated,
@@ -44,7 +47,7 @@ open class FaceMouseLimitedMovimenteViewController: UIViewController {
 
     func startCaptureFace() {
         maxValue = 0
-        configureCaptureSession()
+        session.startRunning()
     }
 
     func stopCaptureFace() {

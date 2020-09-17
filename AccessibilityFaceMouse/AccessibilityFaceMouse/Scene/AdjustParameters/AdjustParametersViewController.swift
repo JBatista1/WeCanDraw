@@ -39,5 +39,3 @@ extension AdjustParametersViewController: AdjustParametersDelegate {
 //            self.customView.changeButtonDesign()
         }
     }
-
-

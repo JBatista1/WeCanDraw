@@ -7,18 +7,19 @@
 //
 
 import UIKit
-
+public typealias Stopped = (valueX: CGFloat, valueY: CGFloat)
 public struct MovimenteLimit {
-    let top: CGFloat
-    let botton: CGFloat
-    let left: CGFloat
-    let right: CGFloat
-
-    public init (top: CGFloat, botton: CGFloat, left: CGFloat, right: CGFloat) {
+    var top: CGFloat
+    var botton: CGFloat
+    var left: CGFloat
+    var right: CGFloat
+    var stopped: Stopped
+    public init (top: CGFloat = 0, botton: CGFloat = 0, left: CGFloat = 0, right: CGFloat = 0, stopped: Stopped = (0, 0)) {
         self.top = top
         self.botton = botton
         self.left = left
         self.right = right
+        self.stopped = stopped
     }
 
 }

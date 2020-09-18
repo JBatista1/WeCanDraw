@@ -20,7 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowsScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowsScene.coordinateSpace.bounds)
         window?.windowScene = windowsScene
-        window?.rootViewController = AdjustParametersViewController()
+        let navigation = UINavigationController()
+        let vc = AdjustParametersViewController(nextViewController: FaceMouseViewController())
+        navigation.pushViewController(vc, animated: true)
+        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
     }
 

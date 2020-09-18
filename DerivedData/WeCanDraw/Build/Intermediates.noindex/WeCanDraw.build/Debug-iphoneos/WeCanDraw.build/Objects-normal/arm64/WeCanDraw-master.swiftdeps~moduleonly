@@ -1,11 +1,11 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "2918c8f4bdbc850c56ceab502acb7398"
-build_time: [1600308920, 613853000]
+build_time: [1600389001, 922620000]
 inputs:
   "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Support Files/AppDelegate.swift": [1597707590, 547124499]
   "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/DrawPresenter.swift": [1597707590, 546452477]
   "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/AppUI/NibView.swift": [1597707590, 545880500]
-  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/DrawViewController.swift": [1597715440, 735719163]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/DrawViewController.swift": [1600385716, 635164535]
   "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Extension/UIViewExtension.swift": [1597707590, 546218573]
-  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Support Files/SceneDelegate.swift": [1597712465, 590124103]
+  "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Support Files/SceneDelegate.swift": [1600386880, 563562683]
   "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/View/Draw.swift": [1597707590, 546741971]

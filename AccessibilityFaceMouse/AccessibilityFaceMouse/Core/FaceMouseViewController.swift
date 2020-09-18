@@ -16,10 +16,10 @@ open class FaceMouseViewController: UIViewController {
     fileprivate var previewLayer: AVCaptureVideoPreviewLayer!
     fileprivate var orientationVideo = CGImagePropertyOrientation.down
     fileprivate var sequenceHandler = VNSequenceRequestHandler()
+    open var limitMoviment = MovimenteLimit()
+    var cursor: MousePosition!
 
-    let cursor = MousePosition(sensibinity: 20, decimalPlace: 1000, initialPosition: CGPoint(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2))
-
-    public var imageView = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 30, height: 30))
+    public var imageHand = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 30, height: 30))
     let dataOutputQueue = DispatchQueue(
         label: "video data queue",
         qos: .userInitiated,
@@ -29,8 +29,11 @@ open class FaceMouseViewController: UIViewController {
     func getView() -> AVCaptureVideoPreviewLayer {
         return previewLayer
     }
-
-    public func configureCaptureSession() {
+    public func startMoviment(wihtLimitedMoviment: MovimenteLimit, andDecimalPlaces decimalPlace: CGFloat) {
+        cursor = MousePosition(decimalPlace: decimalPlace, limitedMoviment: limitMoviment)
+        configureCaptureSession()
+    }
+    private func configureCaptureSession() {
         // Define the capture device we want to use
         guard let camera = AVCaptureDevice.default(.builtInWideAngleCamera,
                                                    for: .video,
@@ -90,7 +93,8 @@ extension FaceMouseViewController: AVCaptureVideoDataOutputSampleBufferDelegate 
             DispatchQueue.main.async {
                 let newPosition = self.cursor.moveTo(usingPoint: point)
                 UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.1, options: .transitionCrossDissolve, animations: {
-                    self.imageView.center = newPosition
+                    self.imageHand.center = newPosition
+                    print(point)
                 }, completion: nil)
             }
         }

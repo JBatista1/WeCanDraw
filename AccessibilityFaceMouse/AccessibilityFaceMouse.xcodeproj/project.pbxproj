@@ -24,8 +24,14 @@
 		9A54933F2512E79700AFD477 /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A54933E2512E79700AFD477 /* Directions.swift */; };
 		9A6E14DF250C42870000FB0E /* SelectorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E14DE250C42870000FB0E /* SelectorEnum.swift */; };
 		9A6E14E1250C434C0000FB0E /* GetMaxMoviment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E14E0250C434C0000FB0E /* GetMaxMoviment.swift */; };
+		9A84F296251422140015AA4C /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F295251422140015AA4C /* UIImageView+Extension.swift */; };
+		9A84F299251422C70015AA4C /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F298251422C70015AA4C /* Assets.swift */; };
+		9A84F29D25142CA40015AA4C /* MovimentMouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F29C25142CA40015AA4C /* MovimentMouse.swift */; };
+		9A84F2A025142CB90015AA4C /* MovimentMouse.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A84F29F25142CB90015AA4C /* MovimentMouse.xib */; };
+		9A84F2A225142CCB0015AA4C /* MovimentMouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2A125142CCB0015AA4C /* MovimentMouseViewController.swift */; };
+		9A84F2A4251431880015AA4C /* NewMousePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2A3251431880015AA4C /* NewMousePosition.swift */; };
+		9A84F2A6251434FB0015AA4C /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2A5251434FB0015AA4C /* Legacy.swift */; };
 		9AB463DD24EB506C00B49F31 /* FaceMouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB463DC24EB506C00B49F31 /* FaceMouseViewController.swift */; };
-		9AB463DF24EB50A400B49F31 /* MousePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB463DE24EB50A400B49F31 /* MousePosition.swift */; };
 		9ACCE97A2512E67500B8BB64 /* MovimenteLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCE9792512E67500B8BB64 /* MovimenteLimit.swift */; };
 		9AE0C36724EB5A6F00AA7E03 /* UIImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE0C36624EB5A6F00AA7E03 /* UIImageAssets.swift */; };
 		9AE0C36A24EB5C2200AA7E03 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE0C36924EB5C2200AA7E03 /* Color.xcassets */; };
@@ -62,8 +68,14 @@
 		9A54933E2512E79700AFD477 /* Directions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
 		9A6E14DE250C42870000FB0E /* SelectorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorEnum.swift; sourceTree = "<group>"; };
 		9A6E14E0250C434C0000FB0E /* GetMaxMoviment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMaxMoviment.swift; sourceTree = "<group>"; };
+		9A84F295251422140015AA4C /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		9A84F298251422C70015AA4C /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		9A84F29C25142CA40015AA4C /* MovimentMouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimentMouse.swift; sourceTree = "<group>"; };
+		9A84F29F25142CB90015AA4C /* MovimentMouse.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovimentMouse.xib; sourceTree = "<group>"; };
+		9A84F2A125142CCB0015AA4C /* MovimentMouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimentMouseViewController.swift; sourceTree = "<group>"; };
+		9A84F2A3251431880015AA4C /* NewMousePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMousePosition.swift; sourceTree = "<group>"; };
+		9A84F2A5251434FB0015AA4C /* Legacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy.swift; sourceTree = "<group>"; };
 		9AB463DC24EB506C00B49F31 /* FaceMouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMouseViewController.swift; sourceTree = "<group>"; };
-		9AB463DE24EB50A400B49F31 /* MousePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousePosition.swift; sourceTree = "<group>"; };
 		9ACCE9792512E67500B8BB64 /* MovimenteLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimenteLimit.swift; sourceTree = "<group>"; };
 		9AE0C36624EB5A6F00AA7E03 /* UIImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageAssets.swift; sourceTree = "<group>"; };
 		9AE0C36924EB5C2200AA7E03 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
@@ -162,6 +174,7 @@
 		9A30256624EB553F00418006 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				9A84F29A25142C850015AA4C /* MovimentMouse */,
 				9A30257124EB571900418006 /* AdjustParameters */,
 			);
 			path = Scene;
@@ -173,6 +186,7 @@
 				9A30256C24EB56E400418006 /* UIViewExtension.swift */,
 				9A30256E24EB570300418006 /* NibView.swift */,
 				9A04941E250D33E800BCB5F7 /* UINotificationCenter+Name.swift */,
+				9A84F295251422140015AA4C /* UIImageView+Extension.swift */,
 			);
 			path = Extenion;
 			sourceTree = "<group>";
@@ -203,12 +217,38 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		9A84F297251422B30015AA4C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9A84F298251422C70015AA4C /* Assets.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9A84F29A25142C850015AA4C /* MovimentMouse */ = {
+			isa = PBXGroup;
+			children = (
+				9A84F29B25142C8D0015AA4C /* View */,
+				9A84F2A125142CCB0015AA4C /* MovimentMouseViewController.swift */,
+			);
+			path = MovimentMouse;
+			sourceTree = "<group>";
+		};
+		9A84F29B25142C8D0015AA4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A84F29C25142CA40015AA4C /* MovimentMouse.swift */,
+				9A84F29F25142CB90015AA4C /* MovimentMouse.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9AB463DB24EB4FE100B49F31 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				9A2EE5012510467F00F1669D /* FaceMouseLimitedMovimenteViewController.swift */,
 				9AB463DC24EB506C00B49F31 /* FaceMouseViewController.swift */,
-				9AB463DE24EB50A400B49F31 /* MousePosition.swift */,
+				9A84F2A3251431880015AA4C /* NewMousePosition.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -216,9 +256,11 @@
 		9AB463E024EB50D200B49F31 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9A84F297251422B30015AA4C /* Constants */,
 				9A30256424EB514D00418006 /* MathLibs.swift */,
 				9A6E14DE250C42870000FB0E /* SelectorEnum.swift */,
 				9A6E14E0250C434C0000FB0E /* GetMaxMoviment.swift */,
+				9A84F2A5251434FB0015AA4C /* Legacy.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -328,6 +370,7 @@
 				9A16520A24EB6D1100834289 /* UIImageAssets.swift in Resources */,
 				9A30257424EB574E00418006 /* AdjustParameters.xib in Resources */,
 				9A16520924EB6C5300834289 /* Images.xcassets in Resources */,
+				9A84F2A025142CB90015AA4C /* MovimentMouse.xib in Resources */,
 				9AE0C36A24EB5C2200AA7E03 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,15 +395,20 @@
 				9A2EE500251042EF00F1669D /* GetLimitedMoviment.swift in Sources */,
 				9ACCE97A2512E67500B8BB64 /* MovimenteLimit.swift in Sources */,
 				9AB463DD24EB506C00B49F31 /* FaceMouseViewController.swift in Sources */,
+				9A84F2A4251431880015AA4C /* NewMousePosition.swift in Sources */,
 				9AE0C36724EB5A6F00AA7E03 /* UIImageAssets.swift in Sources */,
 				9A30256524EB514D00418006 /* MathLibs.swift in Sources */,
+				9A84F299251422C70015AA4C /* Assets.swift in Sources */,
+				9A84F2A225142CCB0015AA4C /* MovimentMouseViewController.swift in Sources */,
 				9A30256824EB568500418006 /* AdjustParametersViewController.swift in Sources */,
 				9A30256A24EB56A900418006 /* AdjustParameters.swift in Sources */,
 				9A2EE5022510467F00F1669D /* FaceMouseLimitedMovimenteViewController.swift in Sources */,
-				9AB463DF24EB50A400B49F31 /* MousePosition.swift in Sources */,
+				9A84F29D25142CA40015AA4C /* MovimentMouse.swift in Sources */,
 				9A30256F24EB570300418006 /* NibView.swift in Sources */,
 				9A6E14DF250C42870000FB0E /* SelectorEnum.swift in Sources */,
+				9A84F2A6251434FB0015AA4C /* Legacy.swift in Sources */,
 				9A6E14E1250C434C0000FB0E /* GetMaxMoviment.swift in Sources */,
+				9A84F296251422140015AA4C /* UIImageView+Extension.swift in Sources */,
 				9A54933F2512E79700AFD477 /* Directions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

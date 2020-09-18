@@ -11,7 +11,6 @@ import AVFoundation
 import Vision
 import Foundation
 import Combine
-private typealias Center = (valueX: CGFloat, valueY: CGFloat)
 
 open class FaceMouseLimitedMovimenteViewController: UIViewController {
 
@@ -22,8 +21,9 @@ open class FaceMouseLimitedMovimenteViewController: UIViewController {
     fileprivate var getMax: ((CGFloat) -> Void)?
     fileprivate var startCapture: Bool = false
     fileprivate var getXAxis = true
-    fileprivate var center: Center = (0, 0)
+    fileprivate var center: Stopped = (0, 0)
     fileprivate var isCaptureCenter: Bool = false
+    fileprivate var setupSonfigurationSession: Bool = false
     private var count = 0
     private var lastValue: CGFloat = 0.0
     private var lastValueY: CGFloat = 0.0
@@ -34,11 +34,8 @@ open class FaceMouseLimitedMovimenteViewController: UIViewController {
     @Published fileprivate var value: Bool = false
     fileprivate var capturedValue: AnyCancellable?
 
-    var medium: CGFloat = 200 
-    open override func viewDidLoad() {
-        configureCaptureSession()
-        session.stopRunning()
-    }
+    var medium: CGFloat = 200
+
     let dataOutputQueue = DispatchQueue(
         label: "video data queue",
         qos: .userInitiated,
@@ -47,7 +44,11 @@ open class FaceMouseLimitedMovimenteViewController: UIViewController {
 
     func startCaptureFace() {
         maxValue = 0
-        session.startRunning()
+        if setupSonfigurationSession {
+             session.startRunning()
+        } else {
+            configureCaptureSession()
+        }
     }
 
     func stopCaptureFace() {
@@ -93,7 +94,7 @@ extension FaceMouseLimitedMovimenteViewController {
                 self.value = false
                 self.isCaptureCenter = false
                 self.stopCaptureFace()
-                completion(self.center.valueX, self.center.valueY)
+                completion(MathLibs.normalize(value: self.center.valueX, decimalValue: 10000), MathLibs.normalize(value: self.center.valueY, decimalValue: 10000))
             }
         }
     }
@@ -113,6 +114,7 @@ extension FaceMouseLimitedMovimenteViewController {
 
 extension FaceMouseLimitedMovimenteViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     private func configureCaptureSession() {
+        setupSonfigurationSession = true
         // Define the capture device we want to use
         guard let camera = AVCaptureDevice.default(.builtInWideAngleCamera,
                                                    for: .video,
@@ -194,6 +196,7 @@ extension FaceMouseLimitedMovimenteViewController: AVCaptureVideoDataOutputSampl
         let normalize = MathLibs.normalize(value: value, decimalValue: 1000)
         valueMax += normalize
     }
+
     private func subtration(valueWith value: CGFloat, ofLastValue lastValue: inout CGFloat) -> CGFloat {
         if lastValue != 0 {
             let normalize = MathLibs.normalize(value: value, decimalValue: 10000)
@@ -217,9 +220,11 @@ extension FaceMouseLimitedMovimenteViewController: AVCaptureVideoDataOutputSampl
     }
     private func captureMax(withValue value: CGFloat) {
         self.sum(valueWith: value, inValue: &self.maxValue)
+        lastValue = value
         if isFinishCapture() {
             self.maxValue /= self.medium
             self.maxValue = MathLibs.normalize(value: self.maxValue, decimalValue: 1000)
+            resetCapture()
         }
     }
     private func isFinishCapture() -> Bool {

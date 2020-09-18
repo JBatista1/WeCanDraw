@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import AccessibilityFaceMouse
 
-class DrawViewController: AdjustParametersViewController {
+class DrawViewController: FaceMouseViewController {
 //    let customView = Draw()
     override func viewDidLoad() {
         super.viewDidLoad()

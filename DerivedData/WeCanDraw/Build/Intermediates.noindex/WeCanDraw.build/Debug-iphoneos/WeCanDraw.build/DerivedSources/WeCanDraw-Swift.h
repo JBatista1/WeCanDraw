@@ -242,7 +242,7 @@ SWIFT_CLASS("_TtC9WeCanDraw4Draw")
 @class NSBundle;
 
 SWIFT_CLASS("_TtC9WeCanDraw18DrawViewController")
-@interface DrawViewController : AdjustParametersViewController
+@interface DrawViewController : FaceMouseViewController
 - (void)viewDidLoad;
 - (void)loadView;
 - (void)viewDidAppear:(BOOL)animated;

@@ -18,7 +18,7 @@ open class FaceMouseViewController: UIViewController {
     fileprivate var sequenceHandler = VNSequenceRequestHandler()
     open var limitMoviment = MovimenteLimit()
     var cursor: MousePosition!
-
+    private var count = 0
     public var imageHand = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 30, height: 30))
     let dataOutputQueue = DispatchQueue(
         label: "video data queue",
@@ -29,8 +29,9 @@ open class FaceMouseViewController: UIViewController {
     func getView() -> AVCaptureVideoPreviewLayer {
         return previewLayer
     }
+    
     public func startMoviment(wihtLimitedMoviment: MovimenteLimit, andDecimalPlaces decimalPlace: CGFloat) {
-        cursor = MousePosition(decimalPlace: decimalPlace, limitedMoviment: limitMoviment)
+        cursor = MousePosition(sensibinity: 5, decimalPlace: 100, initialPosition: CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2), limitMoviment: limitMoviment)
         configureCaptureSession()
     }
     private func configureCaptureSession() {
@@ -48,12 +49,13 @@ open class FaceMouseViewController: UIViewController {
         } catch {
             fatalError(error.localizedDescription)
         }
+        camera.activeVideoMaxFrameDuration = CMTime(value: 1, timescale: 30)
+        camera.activeVideoMinFrameDuration = CMTime(value: 1, timescale: 30)
 
         // Create the video data output
         let videoOutput = AVCaptureVideoDataOutput()
         videoOutput.setSampleBufferDelegate(self, queue: dataOutputQueue)
         videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
-
         // Add the video output to the capture session
         session.addOutput(videoOutput)
 
@@ -90,12 +92,18 @@ extension FaceMouseViewController: AVCaptureVideoDataOutputSampleBufferDelegate 
         guard let results = request.results as? [VNFaceObservation] else { return}
         if let landmark = results.first?.landmarks?.nose {
             guard let point = landmark.normalizedPoints.first else { return }
+            let newPosition = self.cursor.moveTo(usingPoint: point)
+            print(point)
             DispatchQueue.main.async {
-                let newPosition = self.cursor.moveTo(usingPoint: point)
-                UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.1, options: .transitionCrossDissolve, animations: {
-                    self.imageHand.center = newPosition
-                    print(point)
-                }, completion: nil)
+                if self.count == 3 {
+                    UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.1, options: .transitionCrossDissolve, animations: {
+                        self.imageHand.center = newPosition
+                        self.count = 0
+                    }, completion: nil)
+
+                } else {
+                    self.count += 1
+                }
             }
         }
     }

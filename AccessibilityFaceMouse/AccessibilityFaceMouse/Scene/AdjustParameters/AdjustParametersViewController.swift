@@ -26,7 +26,7 @@ open class AdjustParametersViewController: FaceMouseLimitedMovimenteViewControll
     }
     open override func viewDidLoad() {
         super.viewDidLoad()
-        nextScream()
+//        nextScreen()
         customView.delegate = self
         labelStartScan = customView.topLbl
         navigationController?.isNavigationBarHidden = true
@@ -62,7 +62,6 @@ open class AdjustParametersViewController: FaceMouseLimitedMovimenteViewControll
         case .stopped:
             getFaceStopped(completion: { (valuX, valueY) in
                 self.movimentLimited.stopped = (valuX, valueY)
-
                 self.finishScan()
             })
         }
@@ -70,9 +69,8 @@ open class AdjustParametersViewController: FaceMouseLimitedMovimenteViewControll
     }
 }
 extension AdjustParametersViewController: AdjustParametersDelegate {
-    func nextScream() {
-        let viewController = MovimentMouseViewController()
-        viewController.limitMoviment = movimentLimited
+    func nextScreen() {
+        let viewController = MovimentMouseViewController(limitMoviment: movimentLimited)
         navigationController?.pushViewController(viewController, animated: true)
     }
 
@@ -92,7 +90,6 @@ extension AdjustParametersViewController: AdjustParametersDelegate {
         } else {
             self.customView.topLbl.text = "Clique em iniciar para o próximo scaner. Faltam apenas \(arrayLimited.count - directionToGet)"
         }
-
     }
 
     func initial() {

@@ -10,16 +10,25 @@ import UIKit
 
 class MovimentMouseViewController: FaceMouseViewController {
     private let customView = MovimentMouse()
+    
+    init(limitMoviment: MovimenteLimit) {
+        super.init(nibName: nil, bundle: nil)
+        self.limitMoviment = limitMoviment
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        limitMoviment.top  = 0.159
-        limitMoviment.botton = 0.472
-        limitMoviment.left = 0.052
-        limitMoviment.right = 0.851
-        limitMoviment.stopped = (0.0072, 0.0042)
-        startMoviment(wihtLimitedMoviment: limitMoviment, andDecimalPlaces: 1000)
-
-        // Do any additional setup after loading the view.
+//        limitMoviment.top  = 0.297
+//        limitMoviment.botton = 0.588
+//        limitMoviment.left = 0.0194
+//        limitMoviment.right = 0.794
+//        limitMoviment.stopped = (0.00148, 0.00129)
+        startMoviment(wihtLimitedMoviment: limitMoviment, andDecimalPlaces: 100)
+        
     }
     override func loadView() {
         view = customView

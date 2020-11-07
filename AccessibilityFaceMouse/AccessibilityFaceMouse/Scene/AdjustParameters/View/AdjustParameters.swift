@@ -10,7 +10,7 @@ import UIKit
 
 protocol AdjustParametersDelegate: AnyObject {
     func initial()
-    func nextScream()
+    func nextScreen()
 }
 
 class AdjustParameters: NibView {
@@ -55,6 +55,6 @@ class AdjustParameters: NibView {
     func toggleNext() {
         actionButton.backgroundColor = UIColor.greenApp
         actionButton.setTitle("Próximo", for: .normal)
-        delegate.nextScream()
+        delegate.nextScreen()
     }
 }

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <array>
 	<string>AVFoundation</string>
-	<string>Domain</string>
-	<string>Swinject</string>
 	<string>WeCanDraw</string>
+	<string>Swinject</string>
+	<string>Domain</string>
 	<string>Commons</string>
 	<string>AccessibilityFaceMouse</string>
 	<string>XCTest</string>

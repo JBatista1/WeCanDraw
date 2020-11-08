@@ -15,39 +15,36 @@ class MousePosition {
     let marginMovimentY: Float = 0.02
     var lastPoint: CGPoint!
     var lastPointFace = CGPoint(x: 0.0, y: 0.0)
-    var count = 0
-    var count2 = 0
     var moveToRight = false
     var moveToTop = false
     public var mediaX: [Float] = []
     var mediaValues: [Float] = []
-    let limitedMoviment: MovimenteLimit
+    var limitedMoviment: MovimenteLimit
     private let heightScreen = UIScreen.main.bounds.height
     private let widthScreen = UIScreen.main.bounds.width
+    var faceMoviment : (width: CGFloat, height: CGFloat) = (0, 0)
     init(sensibinity: CGFloat, decimalPlace: CGFloat, initialPosition: CGPoint, limitMoviment: MovimenteLimit) {
         self.sensibility = sensibinity
         self.decimalPlace = decimalPlace
         self.lastPoint = initialPosition
         self.limitedMoviment = limitMoviment
+        faceMoviment = getSizeFaceMoviment()
+        lastPoint.y = heightScreen
     }
 
     func moveTo(usingPoint point: CGPoint) -> CGPoint {
         var newPoint = CGPoint(x: 300, y: 0)
-
-//        if point.x > limitedMoviment.right || point.x < limitedMoviment.left || point.y < limitedMoviment.top || point.y > limitedMoviment.botton {
-//            print("Erro")
-//            return lastPoint
-//        }
-//        if (point.x - lastPointFace.x) < limitedMoviment.stopped.valueX + 0.001 && (point.y - lastPointFace.y) < limitedMoviment.stopped.valueY + 0.001 {
-//            print("Stopped")
-//            return lastPoint
-//        }
-//        newPoint.x = (widthScreen * point.x) / limitedMoviment.right
-//        newPoint.y = (heightScream * point.y) / limitedMoviment.botton
-//        newPoint = verifyLimits(position: newPoint)
-        let faceMoviment = getSizeFaceMoviment()
-//        newPoint.x = getAbsolutePositiion(basedPositionFace: point.x, theFaceMaxValue: faceMoviment.width, andScreenMaxValue: widthScreen)
-        newPoint.y = getAbsolutePositiion(basedPositionFace: point.y, theFaceMaxValue: faceMoviment.height, andScreenMaxValue: heightScreen)
+        if point.y > limitedMoviment.botton {
+            newPoint.y = heightScreen
+        } else if point.y < limitedMoviment.top {
+            newPoint.y = 0
+        } else {
+             newPoint.y = getAbsolutePositiion(basedPositionFace: point.y, theFaceMaxValue: faceMoviment.height, andScreenMaxValue: heightScreen)
+        }
+        newPoint.x = getAbsolutePositiion(basedPositionFace: point.x, theFaceMaxValue: faceMoviment.width, andScreenMaxValue: widthScreen)
+        if abs(lastPoint.y - newPoint.y) < limitedMoviment.stopped.valueY {
+            return lastPoint
+        }
         lastPoint = newPoint
         return newPoint
     }
@@ -73,17 +70,35 @@ class MousePosition {
         let absolutePosition = getValue(withPercentage: percentage, andMaxValue: screenMaxValue)
         return absolutePosition
     }
+//    func getPercentage(withValue value: CGFloat, andMaxValue maxValue: CGFloat) -> CGFloat {
+//        let percentage = (value.multiply100()) / maxValue
+//        if  percentage > 100 {
+//            return 100
+//        } else if percentage/maxValue < 0 {
+//            return 0
+//        } else {
+//            return percentage
+//        }
+//    }
     func getPercentage(withValue value: CGFloat, andMaxValue maxValue: CGFloat) -> CGFloat {
-        let percentage = (value*100)/maxValue > 100 ? 100: (value*100)/maxValue
-        return percentage
+        let valueScaled = ((value.multiply100() - faceMoviment.height.multiply100()) / 100)
+        let percentage = (valueScaled.multiply100()) / maxValue
+        if  percentage > 100 {
+            return 100
+        } else if percentage/maxValue < 0 {
+            return 0
+        } else {
+            return percentage
+        }
     }
+
 
     func getValue(withPercentage percentage: CGFloat, andMaxValue maxValue: CGFloat) -> CGFloat {
         return (maxValue * percentage)/100
     }
 
     func getSizeFaceMoviment() -> (width: CGFloat, height: CGFloat) {
-        return(abs(limitedMoviment.right - limitedMoviment.left), limitedMoviment.botton)
+        return(abs(limitedMoviment.right.multiply100() - limitedMoviment.left.multiply100()) / 100, abs(limitedMoviment.botton.multiply100() - limitedMoviment.top.multiply100()) / 100)
     }
 
     func verifyLimits(position: CGPoint) -> CGPoint {

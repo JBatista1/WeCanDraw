@@ -11,11 +11,11 @@
 	<string>XCTest</string>
 	<string>Vision</string>
 	<string>AppKit</string>
-	<string>VoiceCommand</string>
+	<string>Foundation</string>
 	<string>UIKit</string>
 	<string>Storage</string>
-	<string>Foundation</string>
-	<string>Data</string>
 	<string>Combine</string>
+	<string>Data</string>
+	<string>VoiceCommand</string>
 </array>
 </plist>

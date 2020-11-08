@@ -95,8 +95,8 @@ extension FaceMouseViewController: AVCaptureVideoDataOutputSampleBufferDelegate 
             let newPosition = self.cursor.moveTo(usingPoint: point)
             print(point)
             DispatchQueue.main.async {
-                if self.count == 3 {
-                    UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.1, options: .transitionCrossDissolve, animations: {
+                if self.count == 5 {
+                    UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.2, options: .transitionCrossDissolve, animations: {
                         self.imageHand.center = newPosition
                         self.count = 0
                     }, completion: nil)

@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "3c213d8c7153e97ea855eaf4775eb8c1"
-build_time: [1604761556, 566908000]
+build_time: [1604800183, 691400000]
 inputs:
   "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Support Files/AppDelegate.swift": [1597707590, 547124499]
   "/Users/ItSelf/Documents/TCC/Projeto TCC/WeCanDraw/WeCanDraw/Scenes/Drawn/DrawPresenter.swift": [1597707590, 546452477]

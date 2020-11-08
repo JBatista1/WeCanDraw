@@ -32,6 +32,7 @@
 		9A84F2A4251431880015AA4C /* NewMousePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2A3251431880015AA4C /* NewMousePosition.swift */; };
 		9A84F2A6251434FB0015AA4C /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2A5251434FB0015AA4C /* Legacy.swift */; };
 		9AB463DD24EB506C00B49F31 /* FaceMouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB463DC24EB506C00B49F31 /* FaceMouseViewController.swift */; };
+		9AC1CEFE25577F57001ACD98 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1CEFD25577F57001ACD98 /* CGFloatExtension.swift */; };
 		9ACCE97A2512E67500B8BB64 /* MovimenteLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCE9792512E67500B8BB64 /* MovimenteLimit.swift */; };
 		9AE0C36724EB5A6F00AA7E03 /* UIImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE0C36624EB5A6F00AA7E03 /* UIImageAssets.swift */; };
 		9AE0C36A24EB5C2200AA7E03 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE0C36924EB5C2200AA7E03 /* Color.xcassets */; };
@@ -76,6 +77,7 @@
 		9A84F2A3251431880015AA4C /* NewMousePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMousePosition.swift; sourceTree = "<group>"; };
 		9A84F2A5251434FB0015AA4C /* Legacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy.swift; sourceTree = "<group>"; };
 		9AB463DC24EB506C00B49F31 /* FaceMouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMouseViewController.swift; sourceTree = "<group>"; };
+		9AC1CEFD25577F57001ACD98 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		9ACCE9792512E67500B8BB64 /* MovimenteLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimenteLimit.swift; sourceTree = "<group>"; };
 		9AE0C36624EB5A6F00AA7E03 /* UIImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageAssets.swift; sourceTree = "<group>"; };
 		9AE0C36924EB5C2200AA7E03 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				9A30256E24EB570300418006 /* NibView.swift */,
 				9A04941E250D33E800BCB5F7 /* UINotificationCenter+Name.swift */,
 				9A84F295251422140015AA4C /* UIImageView+Extension.swift */,
+				9AC1CEFD25577F57001ACD98 /* CGFloatExtension.swift */,
 			);
 			path = Extenion;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				9AE0C36724EB5A6F00AA7E03 /* UIImageAssets.swift in Sources */,
 				9A30256524EB514D00418006 /* MathLibs.swift in Sources */,
 				9A84F299251422C70015AA4C /* Assets.swift in Sources */,
+				9AC1CEFE25577F57001ACD98 /* CGFloatExtension.swift in Sources */,
 				9A84F2A225142CCB0015AA4C /* MovimentMouseViewController.swift in Sources */,
 				9A30256824EB568500418006 /* AdjustParametersViewController.swift in Sources */,
 				9A30256A24EB56A900418006 /* AdjustParameters.swift in Sources */,

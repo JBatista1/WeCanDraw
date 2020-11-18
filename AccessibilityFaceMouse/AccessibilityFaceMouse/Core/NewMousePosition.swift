@@ -38,6 +38,7 @@ class MousePosition: FaceMousePosition {
 
     func moveTo(usingPoint point: CGPoint) -> CGPoint {
         var newPoint = CGPoint(x: 300, y: 0)
+        print(point)
         if point.y > limitedMoviment.botton {
             newPoint.y = heightScreen
         } else if point.y < limitedMoviment.top {
@@ -56,7 +57,7 @@ class MousePosition: FaceMousePosition {
         let newValue = abs(limitedMoviment.botton - value) 
         let percentage = (newValue.multiply100() / faceMoviment.height)
         let position = (percentage * heightScreen) / 100
-        return position
+        return abs(position - heightScreen)
 
     }
     private func absoluteValue(cgFloat value: CGFloat) -> Float {

@@ -26,7 +26,7 @@ open class AdjustParametersViewController: FaceMouseLimitedMovimenteViewControll
     }
     open override func viewDidLoad() {
         super.viewDidLoad()
-        nextScreen()
+//        nextScreen()
         customView.delegate = self
         labelStartScan = customView.topLbl
         navigationController?.isNavigationBarHidden = true

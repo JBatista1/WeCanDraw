@@ -7,8 +7,11 @@
 //
 
 import UIKit
-
-class MousePosition {
+protocol FaceMousePosition: AnyObject {
+    func moveTo(usingPoint point: CGPoint) -> CGPoint
+    init(sensibinity: CGFloat, decimalPlace: CGFloat, initialPosition: CGPoint, limitMoviment: MovimenteLimit)
+}
+class MousePosition: FaceMousePosition {
     let sensibility: CGFloat!
     let decimalPlace: CGFloat!
     let marginMovimentX: Float = 0.02
@@ -23,7 +26,8 @@ class MousePosition {
     private let heightScreen = UIScreen.main.bounds.height
     private let widthScreen = UIScreen.main.bounds.width
     var faceMoviment : (width: CGFloat, height: CGFloat) = (0, 0)
-    init(sensibinity: CGFloat, decimalPlace: CGFloat, initialPosition: CGPoint, limitMoviment: MovimenteLimit) {
+    
+    required init(sensibinity: CGFloat, decimalPlace: CGFloat, initialPosition: CGPoint, limitMoviment: MovimenteLimit) {
         self.sensibility = sensibinity
         self.decimalPlace = decimalPlace
         self.lastPoint = initialPosition
@@ -39,16 +43,22 @@ class MousePosition {
         } else if point.y < limitedMoviment.top {
             newPoint.y = 0
         } else {
-             newPoint.y = getAbsolutePositiion(basedPositionFace: point.y, theFaceMaxValue: faceMoviment.height, andScreenMaxValue: heightScreen)
+            newPoint.y = testPercentagem(WithPoint: point.y)
         }
-        newPoint.x = getAbsolutePositiion(basedPositionFace: point.x, theFaceMaxValue: faceMoviment.width, andScreenMaxValue: widthScreen)
-        if abs(lastPoint.y - newPoint.y) < limitedMoviment.stopped.valueY {
-            return lastPoint
-        }
-        lastPoint = newPoint
+//        newPoint.x = getAbsolutePositiion(basedPositionFace: point.x, theFaceMaxValue: faceMoviment.width, andScreenMaxValue: widthScreen)
+//        if abs(lastPoint.y - newPoint.y) < limitedMoviment.stopped.valueY {
+//            return lastPoint
+//        }
+        lastPoint = verifyLimits(position: newPoint)
         return newPoint
     }
+    func testPercentagem(WithPoint value: CGFloat) -> CGFloat {
+        let newValue = abs(limitedMoviment.botton - value) 
+        let percentage = (newValue.multiply100() / faceMoviment.height)
+        let position = (percentage * heightScreen) / 100
+        return position
 
+    }
     private func absoluteValue(cgFloat value: CGFloat) -> Float {
         var valueFloat = Float(value)
         valueFloat = fabsf(valueFloat)
@@ -70,16 +80,7 @@ class MousePosition {
         let absolutePosition = getValue(withPercentage: percentage, andMaxValue: screenMaxValue)
         return absolutePosition
     }
-//    func getPercentage(withValue value: CGFloat, andMaxValue maxValue: CGFloat) -> CGFloat {
-//        let percentage = (value.multiply100()) / maxValue
-//        if  percentage > 100 {
-//            return 100
-//        } else if percentage/maxValue < 0 {
-//            return 0
-//        } else {
-//            return percentage
-//        }
-//    }
+
     func getPercentage(withValue value: CGFloat, andMaxValue maxValue: CGFloat) -> CGFloat {
         let valueScaled = ((value.multiply100() - faceMoviment.height.multiply100()) / 100)
         let percentage = (valueScaled.multiply100()) / maxValue
@@ -91,7 +92,6 @@ class MousePosition {
             return percentage
         }
     }
-
 
     func getValue(withPercentage percentage: CGFloat, andMaxValue maxValue: CGFloat) -> CGFloat {
         return (maxValue * percentage)/100

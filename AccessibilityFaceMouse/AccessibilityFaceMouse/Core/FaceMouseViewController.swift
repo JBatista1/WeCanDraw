@@ -17,7 +17,7 @@ open class FaceMouseViewController: UIViewController {
     fileprivate var orientationVideo = CGImagePropertyOrientation.down
     fileprivate var sequenceHandler = VNSequenceRequestHandler()
     open var limitMoviment = MovimenteLimit()
-    var cursor: MousePosition!
+    var cursor: FaceMousePosition!
     private var count = 0
     public var imageHand = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 30, height: 30))
     let dataOutputQueue = DispatchQueue(
@@ -93,18 +93,16 @@ extension FaceMouseViewController: AVCaptureVideoDataOutputSampleBufferDelegate 
         if let landmark = results.first?.landmarks?.nose {
             guard let point = landmark.normalizedPoints.first else { return }
             let newPosition = self.cursor.moveTo(usingPoint: point)
-            print(point)
             DispatchQueue.main.async {
-                if self.count == 5 {
-                    UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.2, options: .transitionCrossDissolve, animations: {
-                        self.imageHand.center = newPosition
-                        self.count = 0
-                    }, completion: nil)
-
-                } else {
-                    self.count += 1
-                }
+                UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.2, options: .transitionCrossDissolve, animations: {
+                    self.imageHand.center = newPosition
+                    self.count = 0
+                }, completion: nil)
             }
         }
+    }
+
+    private func moveCursor(toPoint point: CGPoint) {
+
     }
 }

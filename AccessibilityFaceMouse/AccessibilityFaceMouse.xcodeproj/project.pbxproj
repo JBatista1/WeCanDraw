@@ -31,6 +31,7 @@
 		9A84F2A225142CCB0015AA4C /* MovimentMouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2A125142CCB0015AA4C /* MovimentMouseViewController.swift */; };
 		9A84F2A4251431880015AA4C /* NewMousePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2A3251431880015AA4C /* NewMousePosition.swift */; };
 		9A84F2A6251434FB0015AA4C /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2A5251434FB0015AA4C /* Legacy.swift */; };
+		9AAE08D925648B87002024CE /* DirectionCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE08D825648B87002024CE /* DirectionCursor.swift */; };
 		9AB463DD24EB506C00B49F31 /* FaceMouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB463DC24EB506C00B49F31 /* FaceMouseViewController.swift */; };
 		9AC1CEFE25577F57001ACD98 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1CEFD25577F57001ACD98 /* CGFloatExtension.swift */; };
 		9ACCE97A2512E67500B8BB64 /* MovimenteLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCE9792512E67500B8BB64 /* MovimenteLimit.swift */; };
@@ -76,6 +77,7 @@
 		9A84F2A125142CCB0015AA4C /* MovimentMouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimentMouseViewController.swift; sourceTree = "<group>"; };
 		9A84F2A3251431880015AA4C /* NewMousePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMousePosition.swift; sourceTree = "<group>"; };
 		9A84F2A5251434FB0015AA4C /* Legacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy.swift; sourceTree = "<group>"; };
+		9AAE08D825648B87002024CE /* DirectionCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionCursor.swift; sourceTree = "<group>"; };
 		9AB463DC24EB506C00B49F31 /* FaceMouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMouseViewController.swift; sourceTree = "<group>"; };
 		9AC1CEFD25577F57001ACD98 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		9ACCE9792512E67500B8BB64 /* MovimenteLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimenteLimit.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				9A54933E2512E79700AFD477 /* Directions.swift */,
+				9AAE08D825648B87002024CE /* DirectionCursor.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				9A6E14DF250C42870000FB0E /* SelectorEnum.swift in Sources */,
 				9A84F2A6251434FB0015AA4C /* Legacy.swift in Sources */,
 				9A6E14E1250C434C0000FB0E /* GetMaxMoviment.swift in Sources */,
+				9AAE08D925648B87002024CE /* DirectionCursor.swift in Sources */,
 				9A84F296251422140015AA4C /* UIImageView+Extension.swift in Sources */,
 				9A54933F2512E79700AFD477 /* Directions.swift in Sources */,
 			);

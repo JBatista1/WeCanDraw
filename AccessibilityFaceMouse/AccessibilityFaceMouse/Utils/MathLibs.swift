@@ -14,7 +14,7 @@ public struct MathLibs {
         let newValue = CGFloat(normalizeValue / decimalValue)
         return newValue
     }
-    static func conrteFirstNumber(inValue value: CGFloat, decimalValue: CGFloat) -> Int{
+    static func conrteFirstNumber(inValue value: CGFloat, decimalValue: CGFloat) -> Int {
         return Int(decimalValue * value)
     }
 

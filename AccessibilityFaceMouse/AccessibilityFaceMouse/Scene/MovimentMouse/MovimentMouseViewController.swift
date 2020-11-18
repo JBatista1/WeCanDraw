@@ -22,11 +22,11 @@ class MovimentMouseViewController: FaceMouseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        limitMoviment.top  = 0.297
-//        limitMoviment.botton = 0.588
-//        limitMoviment.left = 0.0194
-//        limitMoviment.right = 0.794
-//        limitMoviment.stopped = (0.00148, 0.00129)
+        limitMoviment.top  = 0.297
+        limitMoviment.botton = 0.588
+        limitMoviment.left = 0.0194
+        limitMoviment.right = 0.794
+        limitMoviment.stopped = (0.00148, 0.00129)
         startMoviment(wihtLimitedMoviment: limitMoviment, andDecimalPlaces: 100)
         
     }
